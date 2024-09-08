@@ -1,9 +1,9 @@
 # MusicStore
-TSOHA 2024_09_08 / Thy
+TSOHA 2024_09_08 / Thy / MS Copilot used as an AI-assistant
 The final subset of user stories to be implemented for the excercise, 
 which will be delivered in october-24, should be selected from this document during next phase.
 
-MusicStore-system, User stories, MSus_v1
+MusicStore-system, User stories, MSus_v1 (Please, see more readable .pdf-version of this, which can be found from this repository also.)
 
 These user stories outline the key functionalities and acceptance criteria for registering and operating stores, store managers, customers, product groups and products in the MusicStore database. 
 
