@@ -1,11 +1,14 @@
 # MusicStore
+
+MusicStore_v2  2024_09_22
+
 TSOHA 2024_09_08 / Thy / MS Copilot used as an AI-assistant
-The final subset of user stories to be implemented for the excercise, 
+The final subset of user stories to be implemented for the excercise,
 which will be delivered in october-24, should be selected from this document during next phase.
 
 MusicStore-system, User stories, MSus_v1 (Please, see more readable .pdf-version of this, which can be found from this repository also.)
 
-These user stories outline the key functionalities and acceptance criteria for registering and operating stores, store managers, customers, product groups and products in the MusicStore database. 
+These user stories outline the key functionalities and acceptance criteria for registering and operating stores, store managers, customers, product groups and products in the MusicStore database.
 
 The core concept of MusicStore system is the ShoppingCart-entity.
 
@@ -34,7 +37,7 @@ The system should validate that storeName, storeManagerName,  storeManagerPssw, 
 	- The system should  save storeManagerPssw field in a hashed format.
 The system should allow optional field for storeLogoUrl.
 The system should link the store manager to a Customer record (for making purchases as a customer) using storeManager_id.
-Upon successful registration, the store manager should receive a confirmation message. 
+Upon successful registration, the store manager should receive a confirmation message.
 
 Here is an example of how a password can be hashed by using the  PostgreSQL’s crypt function:
 
@@ -49,12 +52,12 @@ VALUES (
 );
 
 
-These user stories outline the key functionalities and acceptance criteria for logging in and out for both customers and store managers in the MusicStore. 
+These user stories outline the key functionalities and acceptance criteria for logging in and out for both customers and store managers in the MusicStore.
 
 User Story 3: Customer Login
 
 As a registered customer, I want to log in to my account,
-so that I can access my shopping cart, view my order history, 
+so that I can access my shopping cart, view my order history,
 and manage my account details.
 
 Acceptance Criteria:
@@ -113,7 +116,7 @@ This table should be part of the Customer dashboard.
 SQL View for the Customer ShoppingCart view on the Customer Dashboard
 
 CREATE VIEW CustomerShoppingCartHeaders AS
-SELECT 
+SELECT
     sc.id AS cart_id,
     sc.cartCustomer_id AS customer_id,
     sc.cartStatus AS cart_status,
@@ -121,13 +124,13 @@ SELECT
     sc.cartPurchasedTime AS purchased_time,
     sc.cartDeliveryTime AS delivery_time,
     sc.cartTotal AS total_amount
-FROM 
+FROM
     ShoppingCart sc
-WHERE 
+WHERE
     sc.cartCustomer_id = customer_id, -- the actual user ID
-ORDER BY 
+ORDER BY
     sc.cartStatus,
-    CASE 
+    CASE
         WHEN sc.cartStatus = FALSE THEN sc.cartEditedTime
         WHEN sc.cartStatus = TRUE AND sc.cartDeliveryTime IS NULL THEN       	sc.cartPurchasedTime
         WHEN sc.cartStatus = TRUE AND sc.cartDeliveryTime IS NOT NULL THEN	  	sc.cartDeliveryTime
@@ -142,7 +145,7 @@ Filters the results to include only the ShoppingCarts of the current user (repla
 
 ORDER BY Clause:
 Orders the results by cartStatus and the respective timestamps in descending order to ensure the most recent dates are at the top.
-This view will provide a comprehensive list of ShoppingCart headers for the customer, categorized by their status and sorted by the most recent dates. 
+This view will provide a comprehensive list of ShoppingCart headers for the customer, categorized by their status and sorted by the most recent dates.
 
 
 StoreManager Dashboard User Stories
@@ -230,7 +233,7 @@ SQL View Script for Customer Shopping Activities.
 This view will provide an overview of the customer’s shopping cart activities, supporting the functionalities described above.
 
 CREATE VIEW CustomerShoppingCartView AS
-SELECT 
+SELECT
     sc.id AS shoppingCart_id,
     sc.cartCustomer_id AS customer_id,
     sc.cartStore_id AS store_id,
@@ -251,13 +254,13 @@ SELECT
     (p.productSalesPrice * scp.quantity) AS product_total_price,
     (p.productDiscount * scp.quantity) AS product_total_discount,
     (p.productVat * scp.quantity) AS product_total_vat
-FROM 
+FROM
     ShoppingCart sc
-JOIN 
+JOIN
     ShoppingCartProduct scp ON sc.id = scp.shoppingCart_id
-JOIN 
+JOIN
     Product p ON scp.product_id = p.id
-ORDER BY 
+ORDER BY
     sc.cartStatus, sc.cartCurrentTime DESC;
 
 Explanation:
@@ -278,7 +281,7 @@ so that the system accurately reflects sales, discounts, VAT, and inventory leve
 
 Acceptance Criteria:
 State Change to “Purchased”:
-When the customer changes the shopping cart state to “purchased”, the system should update the daily and monthly 
+When the customer changes the shopping cart state to “purchased”, the system should update the daily and monthly
 cumulative sums for each product, including discounts and VAT.
 The system should decrease the amount of products in store based on the quantity sold.
 
@@ -290,12 +293,12 @@ Inventory Control:
 The system should decrease the productsInStore field in the Product table based on the quantity sold.
 
 
-This script ensures that the system accurately updates the cumulative sums and inventory levels 
+This script ensures that the system accurately updates the cumulative sums and inventory levels
 when a customer’s shopping cart state is changed to “purchased”:
 
 -- Update daily and monthly cumulative sums and inventory control
 WITH UpdatedSales AS (
-    SELECT 
+    SELECT
         sc.id AS shoppingCart_id,
         sc.cartCustomer_id AS customer_id,
         sc.cartStore_id AS store_id,
@@ -307,49 +310,49 @@ WITH UpdatedSales AS (
         p.productSalesPrice,
         p.productDiscount,
         p.productVat
-    FROM 
+    FROM
         ShoppingCart sc
-    JOIN 
+    JOIN
         ShoppingCartProduct scp ON sc.id = scp.shoppingCart_id
-    JOIN 
+    JOIN
         Product p ON scp.product_id = p.id
-    WHERE 
+    WHERE
         sc.cartStatus = 'purchased'
 )
 -- Update daily cumulative sums
 UPDATE Product
-SET 
+SET
     dailySales = dailySales + us.total_amount,
     dailyDiscounts = dailyDiscounts + us.total_discount,
     dailyTaxes = dailyTaxes + us.total_vat,
     productsInStore = productsInStore - us.product_quantity
-FROM 
+FROM
     UpdatedSales us
-WHERE 
+WHERE
     Product.id = us.product_id;
 
 -- Update monthly cumulative sums
 UPDATE Product
-SET 
+SET
     monthlySales = monthlySales + us.total_amount,
     monthlyDiscounts = monthlyDiscounts + us.total_discount,
     monthlyTaxes = monthlyTaxes + us.total_vat
-FROM 
+FROM
     UpdatedSales us
-WHERE 
+WHERE
     Product.id = us.product_id;
 
 -- Update ProductGroup cumulative monthly saldo fields
 UPDATE ProductGroup
-SET 
+SET
     monthlySales_01 = monthlySales_01 + COALESCE(us.total_amount, 0),
     monthlyDiscounts_01 = monthlyDiscounts_01 + COALESCE(us.total_discount, 0),
     monthlyTaxes_01 = monthlyTaxes_01 + COALESCE(us.total_vat, 0)
-FROM 
+FROM
     UpdatedSales us
-JOIN 
+JOIN
     Product p ON us.product_id = p.id
-WHERE 
+WHERE
     ProductGroup.id = p.productGroup_id
     AND EXTRACT(MONTH FROM CURRENT_DATE) = 1;
 
@@ -377,7 +380,7 @@ Here are the SQL-view scripts for the various Dashboard reports:
 Customers’ Shopping Cart view for the Store Manager
 
 CREATE VIEW CustomerShoppingCartReport AS
-SELECT 
+SELECT
     sc.id AS cart_id,
     sc.cartCustomer_id AS customer_id,
     sc.cartStatus AS cart_status,
@@ -386,9 +389,9 @@ SELECT
     sc.cartPurchasedTime AS purchased_time,
     sc.cartDeliveryTime AS delivery_time,
     sc.cartTotal AS total_amount
-FROM 
+FROM
     ShoppingCart sc
-ORDER BY 
+ORDER BY
     sc.cartCustomer_id, sc.cartStatus, sc.cartCurrentTime DESC;
 
 Total Sales and Profit Margin per Product  and Product Group Report
@@ -397,41 +400,41 @@ Total Sales and Profit Margin per Product  and Product Group Report
 
 CREATE VIEW SalesReport AS
 WITH DailySales AS (
-    SELECT 
+    SELECT
         p.id AS product_id,
         p.productName AS product_name,
         p.dailySales AS daily_sales,
         p.dailyDiscounts AS daily_discounts,
         p.dailyTaxes AS daily_vat,
         CURRENT_DATE AS report_date
-    FROM 
+    FROM
         Product p
 ),
 MonthlySales AS (
-    SELECT 
+    SELECT
         p.id AS product_id,
         p.productName AS product_name,
         p.monthlySales AS monthly_sales,
         p.monthlyDiscounts AS monthly_discounts,
         p.monthlyTaxes AS monthly_vat,
         DATE_TRUNC('month', CURRENT_DATE) AS report_month
-    FROM 
+    FROM
         Product p
 ),
 YearlySales AS (
-    SELECT 
+    SELECT
         p.id AS product_id,
         p.productName AS product_name,
         SUM(p.monthlySales) AS yearly_sales,
         SUM(p.monthlyDiscounts) AS yearly_discounts,
         SUM(p.monthlyTaxes) AS yearly_vat,
         DATE_TRUNC('year', CURRENT_DATE) AS report_year
-    FROM 
+    FROM
         Product p
-    GROUP BY 
+    GROUP BY
         p.id, p.productName
 )
-SELECT 
+SELECT
     ds.product_id,
     ds.product_name,
     ds.daily_sales,
@@ -446,13 +449,13 @@ SELECT
     ds.report_date,
     ms.report_month,
     ys.report_year
-FROM 
+FROM
     DailySales ds
-JOIN 
+JOIN
     MonthlySales ms ON ds.product_id = ms.product_id
-JOIN 
+JOIN
     YearlySales ys ON ds.product_id = ys.product_id
-ORDER BY 
+ORDER BY
     ds.product_name;
 
 Explanation:
@@ -473,7 +476,7 @@ Orders the results by product_name for easy readability.
 
 UI Layout Proposal for StoreManager Dashboard
 
-This layout ensures that the StoreManager has 
+This layout ensures that the StoreManager has
 quick access to essential reports and information.
 
 
@@ -524,7 +527,7 @@ Order By: Orders the results by cart_category and then by the timestamps (cartEd
 
 
 CREATE VIEW CustomerShoppingCarts AS
-SELECT 
+SELECT
     c.id AS customer_id,
     c.custoName AS customer_name,
     sc.id AS cart_id,
@@ -532,23 +535,23 @@ SELECT
     sc.cartEditedTime AS edited_time,
     sc.cartPurchasedTime AS purchased_time,
     sc.cartDeliveryTime AS delivery_time,
-    CASE 
+    CASE
         WHEN sc.cartStatus = FALSE THEN 'Open'
         WHEN sc.cartStatus = TRUE AND sc.cartDeliveryTime IS NULL THEN 'Closed'
         WHEN sc.cartStatus = TRUE AND sc.cartDeliveryTime IS NOT NULL THEN 'Delivered'
     END AS cart_category
-FROM 
+FROM
     Customer c
-JOIN 
+JOIN
     ShoppingCart sc ON c.id = sc.cartCustomer_id
-ORDER BY 
+ORDER BY
     cart_category DESC,
     sc.cartEditedTime DESC,
     sc.cartPurchasedTime DESC,
     sc.cartDeliveryTime DESC;
 
 
-Total sales and profit marging calculated from shopping carts 
+Total sales and profit marging calculated from shopping carts
 (Shopping cart analyze)
 
 Here is a SQL view script that creates a sql-view to list the total sum of sales, discounts, profit and VAT of the MusicStore customers’ shopping carts, categorized per ProductGroup and by the status of the shopping carts (open, closed, and delivered), ordered alphabetically by ProductGroup names:
@@ -572,9 +575,9 @@ ORDER BY:
 Orders the results alphabetically by ProductGroup names.
 
 CREATE VIEW ProductGroupSales AS
-SELECT 
+SELECT
     pg.prodGroupName AS product_group,
-    CASE 
+    CASE
         WHEN sc.cartStatus = FALSE THEN 'Open'
         WHEN sc.cartStatus = TRUE AND sc.cartDeliveryTime IS NULL THEN 'Closed'
         WHEN sc.cartStatus = TRUE AND sc.cartDeliveryTime IS NOT NULL THEN 'Delivered'
@@ -582,15 +585,15 @@ SELECT
     SUM(sc.cartTotal) AS total_sales,
     SUM(sc.cartDiscount) AS total_discounts,
     SUM(sc.cartVat) AS total_vat
-FROM 
+FROM
     ShoppingCart sc
-JOIN 
+JOIN
     Product p ON p.id IN (sc.cartProd_1_id, sc.cartProd_2_id, sc.cartProd_3_id, sc.cartProd_4_id, sc.cartProd_5_id, sc.cartProd_6_id, sc.cartProd_7_id, sc.cartProd_8_id, sc.cartProd_9_id, sc.cartProd_10_id, sc.cartProd_11_id, sc.cartProd_12_id)
-JOIN 
+JOIN
     ProductGroup pg ON p.productGroup_id = pg.id
-GROUP BY 
+GROUP BY
     pg.prodGroupName, cart_status
-ORDER BY 
+ORDER BY
     pg.prodGroupName ASC;
 
 
@@ -599,7 +602,7 @@ Campaign sales view based on shopping carts
 Here is a SQL view script that lists all campaign sales products, calculates their sales amount in euros, pieces sold, profit margin percentage, and discount percentage compared to the normal sales price. The list includes basic product information and is ordered in descending order of the amount sold in euros.
 
 CREATE VIEW CampaignSales AS
-SELECT 
+SELECT
     p.id AS product_id,
     p.productName AS product_name,
     p.productDetails AS product_details,
@@ -609,15 +612,15 @@ SELECT
     COUNT(p.id) AS pieces_sold,
     ((p.productCampaignPrice - p.producPurchPrice) / p.productCampaignPrice) * 100 AS profit_margin_percent,
     ((p.productSalesPrice - p.productCampaignPrice) / p.productSalesPrice) * 100 AS discount_percent
-FROM 
+FROM
     ShoppingCart sc
-JOIN 
+JOIN
     Product p ON p.id IN (sc.cartProd_1_id, sc.cartProd_2_id, sc.cartProd_3_id, sc.cartProd_4_id, sc.cartProd_5_id, sc.cartProd_6_id, sc.cartProd_7_id, sc.cartProd_8_id, sc.cartProd_9_id, sc.cartProd_10_id, sc.cartProd_11_id, sc.cartProd_12_id)
-WHERE 
+WHERE
     p.productCampaignFlag = TRUE
-GROUP BY 
+GROUP BY
     p.id, p.productName, p.productDetails, p.productSalesPrice, p.productCampaignPrice, p.producPurchPrice
-ORDER BY 
+ORDER BY
     total_sales_euros DESC;
 
 Following essential sql-statements and clause are used:
@@ -646,7 +649,7 @@ Best selling Products view (shopping cart analyze)
 Here is a SQL view script that lists all products with their attributes, including basic information and pricing details, along with campaign information. The view is grouped by ProductGroup and sorted by the best-selling products within each ProductGroup, which are in alphabetical order.
 
 CREATE VIEW ProductDetails AS
-SELECT 
+SELECT
     pg.prodGroupName AS product_group,
     p.id AS product_id,
     p.productName AS product_name,
@@ -664,15 +667,15 @@ SELECT
     p.productEdited AS edited_date,
     SUM(sc.cartTotal) AS total_sales_euros,
     COUNT(p.id) AS pieces_sold
-FROM 
+FROM
     Product p
-JOIN 
+JOIN
     ProductGroup pg ON p.productGroup_id = pg.id
-LEFT JOIN 
+LEFT JOIN
     ShoppingCart sc ON p.id IN (sc.cartProd_1_id, sc.cartProd_2_id, sc.cartProd_3_id, sc.cartProd_4_id, sc.cartProd_5_id, sc.cartProd_6_id, sc.cartProd_7_id, sc.cartProd_8_id, sc.cartProd_9_id, sc.cartProd_10_id, sc.cartProd_11_id, sc.cartProd_12_id)
-GROUP BY 
+GROUP BY
     pg.prodGroupName, p.id, p.productName, p.productDetails, p.productSalesPrice, p.productCampaignPrice, p.productDiscount, p.productCampaignFlag, p.productCampaignStart, p.productCampaignEnd, p.productsInStore, p.productsReserved, p.producPurchPrice, p.productCreated, p.productEdited
-ORDER BY 
+ORDER BY
     pg.prodGroupName ASC, total_sales_euros DESC;
 
 Following essential sql-statements are used:
@@ -697,7 +700,7 @@ Here is a SQL view script that lists customers with all their attributes, ordere
 
 CREATE VIEW BestBuyers AS
 WITH MonthlyPurchases AS (
-    SELECT 
+    SELECT
         c.id AS customer_id,
         c.custoName AS customer_name,
         c.custoEmail AS customer_email,
@@ -707,16 +710,16 @@ WITH MonthlyPurchases AS (
         EXTRACT(YEAR FROM sc.cartPurchasedTime) AS purchase_year,
         EXTRACT(MONTH FROM sc.cartPurchasedTime) AS purchase_month,
         SUM(sc.cartTotal) AS total_purchases
-    FROM 
+    FROM
         Customer c
-    JOIN 
+    JOIN
         ShoppingCart sc ON c.id = sc.cartCustomer_id
-    WHERE 
+    WHERE
         sc.cartPurchasedTime >= DATE_TRUNC('year', CURRENT_DATE)
-    GROUP BY 
+    GROUP BY
         c.id, c.custoName, c.custoEmail, c.custoPhone, c.custoStatus, c.custoBlocked, purchase_year, purchase_month
 )
-SELECT 
+SELECT
     customer_id,
     customer_name,
     customer_email,
@@ -732,11 +735,11 @@ SELECT
     MAX(CASE WHEN purchase_month = 6 THEN total_purchases ELSE 0 END) AS june_purchases,
     MAX(CASE WHEN purchase_month = 7 THEN total_purchases ELSE 0 END) AS july_purchases,
     MAX(CASE WHEN purchase_month = 8 THEN total_purchases ELSE 0 END) AS august_purchases
-FROM 
+FROM
     MonthlyPurchases
-GROUP BY 
+GROUP BY
     customer_id, customer_name, customer_email, customer_phone, customer_status, customer_blocked
-ORDER BY 
+ORDER BY
     total_purchases_year DESC;
 
 Following essential sql-statements are used:
