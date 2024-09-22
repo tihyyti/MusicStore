@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Dashboard</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
-        <h1>Customer Dashboard</h1>
+        <h1>Shopping Cart</h1>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,24 +24,7 @@
         </nav>
     </header>
     <main class="container mt-4">
-        <section id="account-details">
-            <p>Name: {{ customer_details[2] }}</p>
-            <p>Email: {{ customer_details[4] }}</p>
-            <p>Phone: {{ customer_details[5] }}</p>
-        </section>
-        <section id="order-history">
-            <h2>Order History</h2>
-            {% for order in order_history %}
-                <div class="order">
-                    <p>Order ID: {{ order[0] }}</p>
-                    <p>Total: {{ order[7] }}</p>
-                </div>
-            {% endfor %}
-        </section>
-        <section id="shopping-carts">
-            <h2>Shopping Carts</h2>
-            <a href="{{ url_for('customer_shopping_carts') }}" class="btn btn-primary">View Shopping Carts</a>
-        </section>
+        <p>Your shopping cart is currently empty.</p>
     </main>
     <footer class="text-center mt-4">
         <p>© 2024 Music Store</p>

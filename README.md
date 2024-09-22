@@ -4,9 +4,10 @@ MusicStore_v1  2024_09_22 Status report/ Thy / MS Copilot used as an AI-assistan
 - user stories done
 - database with schema created and populated with testdata set
 - MusicStore Flask application fw configured, coded and tested: OK
-- some routes and related templates coded, testing is going on: see module tree
+- some routes controllers and related templates coded, testing is going on,
+  but not working routes yet: see module tree
 - Music Store System Installation and Configuration Guide, v1 done, see Readme.md
-- main navigation menu and landing page coded, UI-structure and consistent style is designed
+- main navigation menu on the landing page coded, UI-structure and consistent style is designed
 - Customer and Store Manager dashboards are coded and are part of this commit
 - all the simplier dashboard listings with CRUD-functionality are coded (not part of this commit)
 - all the customer related shopping cart reporting and store sales and profitability reports
