@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Manager Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Shop Manager Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                <li><a href="{{ url_for('shoppingcart') }}">Shopping Cart</a></li>
+                <li><a href="{{ url_for('custodashboard') }}">Customer Dashboard</a></li>
+                <li><a href="{{ url_for('shopmanagerdashboard') }}">Shop Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="store-details">
+            <p>Store Name: {{ store_details[3] }}</p>
+            <p>Manager: {{ store_details[1] }}</p>
+            <p>Email: {{ store_details[6] }}</p>
+            <p>Phone: {{ store_details[5] }}</p>
+        </section>
+        <section id="product-groups">
+            <h2>Product Groups</h2>
+            {% for group in product_groups %}
+                <div class="product-group">
+                    <p>Group Name: {{ group[2] }}</p>
+                    <p>Discount: {{ group[3] }}%</p>
+                    <p>VAT: {{ group[4] }}%</p>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Music Store</p>
+    </footer>
+</body>
+</html>

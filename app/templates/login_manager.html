@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Manager Login</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                <li><a href="{{ url_for('shoppingcart') }}">Shopping Cart</a></li>
+                <li><a href="{{ url_for('custodashboard') }}">Customer Dashboard</a></li>
+                <li><a href="{{ url_for('manager_dashboard') }}">Manager Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post">
+            <label for="storeManagerName">Username:</label>
+            <input type="text" id="storeManagerName" name="storeManagerName" required>
+            <label for="storeManagerPssw">Password:</label>
+            <input type="password" id="storeManagerPssw" name="storeManagerPssw" required>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Music Store</p>
+    </footer>
+</body>
+</html>
