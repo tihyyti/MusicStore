@@ -13,6 +13,7 @@ MusicStore_v1  2024_09_22 Status report/ Thy / MS Copilot used as an AI-assistan
 are coded as sql-views, python controllers and html views, but are not committed in this delivery.
 
 Here is Configuration and installation guide for the testers:
+MORE READABLE VERSION IS IN APP-DIRECTORY ABOVE README !
 
 2024.09.22
 Music Store System Installation and Configuration Guide, v1
