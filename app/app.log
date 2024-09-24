@@ -77,3 +77,1485 @@
 2024-09-22 23:44:39,291 INFO werkzeug 127.0.0.1 - - [22/Sep/2024 23:44:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
 2024-09-22 23:44:39,292 INFO werkzeug 127.0.0.1 - - [22/Sep/2024 23:44:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
 2024-09-22 23:44:39,307 INFO werkzeug 127.0.0.1 - - [22/Sep/2024 23:44:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 01:42:54,691 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 01:42:54,691 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 01:42:54,700 INFO werkzeug  * Restarting with stat
+2024-09-23 01:42:56,586 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:42:56,665 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:43:32,034 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:43:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 01:43:32,091 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:43:32] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 01:43:32,107 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:43:32] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 01:43:32,141 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:43:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 01:49:44,503 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:49:44,504 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:49:44,661 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 01:49:44,662 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 01:49:44,662 INFO werkzeug  * Restarting with stat
+2024-09-23 01:49:46,842 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:49:46,894 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:49:48,660 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:49:48,661 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:49:53,597 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 01:49:53,597 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 01:49:53,602 INFO werkzeug  * Restarting with stat
+2024-09-23 01:49:55,487 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:49:55,520 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:50:09,929 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:50:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 01:50:09,954 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:50:09] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 01:50:09,956 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:50:09] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 01:50:09,973 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:50:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 01:51:51,035 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\mainmenu.py', reloading
+2024-09-23 01:51:51,118 INFO werkzeug  * Restarting with stat
+2024-09-23 01:51:53,005 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:51:53,040 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:51:59,058 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\mainmenu.py', reloading
+2024-09-23 01:51:59,156 INFO werkzeug  * Restarting with stat
+2024-09-23 01:52:00,829 WARNING werkzeug  * Debugger is active!
+2024-09-23 01:52:00,863 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 01:52:09,546 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:52:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 01:52:09,578 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:52:09] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 01:52:09,579 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:52:09] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 01:52:09,595 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 01:52:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 01:59:08,275 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 01:59:08,365 INFO werkzeug  * Restarting with stat
+2024-09-23 02:06:11,004 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 02:06:11,005 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 02:06:11,010 INFO werkzeug  * Restarting with stat
+2024-09-23 02:06:13,109 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:06:13,145 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:06:19,895 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:06:19] "GET /home HTTP/1.1" 200 -
+2024-09-23 02:06:19,926 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:06:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-23 02:06:52,676 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:06:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:06:52,707 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:06:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:06:52,710 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:06:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:06:52,727 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:06:52] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:10:54,343 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:10:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:10:54,370 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:10:54] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:10:54,371 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:10:54] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:10:54,386 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:10:54] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:11:53,114 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:11:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:11:53,158 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:11:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:11:53,159 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:11:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:11:53,177 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:11:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:13:39,565 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:13:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:13:39,586 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:13:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:13:39,589 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:13:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:13:39,606 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:13:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:15:48,925 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:15:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:15:48,945 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:15:48] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:15:48,948 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:15:48] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:15:48,970 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:15:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:16:34,450 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:16:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:16:34,484 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:16:34] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:16:34,485 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:16:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:16:34,506 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:16:34] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:18:11,185 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:18:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:18:11,207 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:18:11] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:18:11,209 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:18:11] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:18:11,232 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:18:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:19:23,403 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:19:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:19:23,421 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:19:23] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:19:23,422 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:19:23] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:19:23,432 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:19:23] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:20:24,880 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:20:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:20:24,900 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:20:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:20:24,901 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:20:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:20:24,918 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:20:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:27:08,952 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:27:08,953 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:27:09,100 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 02:27:09,101 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 02:27:09,101 INFO werkzeug  * Restarting with stat
+2024-09-23 02:27:11,199 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:27:11,233 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:27:17,591 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:27:17,592 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:27:23,372 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 02:27:23,372 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 02:27:23,375 INFO werkzeug  * Restarting with stat
+2024-09-23 02:27:25,470 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:27:25,506 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:27:33,897 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:27:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:27:33,925 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:27:33] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:27:33,928 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:27:33] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:27:33,944 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:27:33] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:31:24,127 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 02:31:24,234 INFO werkzeug  * Restarting with stat
+2024-09-23 02:31:26,063 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:31:26,097 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:31:33,582 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 02:31:33,673 INFO werkzeug  * Restarting with stat
+2024-09-23 02:31:35,648 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:31:35,691 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:31:53,848 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:31:53,849 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:31:54,006 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 02:31:54,007 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 02:31:54,007 INFO werkzeug  * Restarting with stat
+2024-09-23 02:31:59,026 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 02:31:59,026 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 02:31:59,029 INFO werkzeug  * Restarting with stat
+2024-09-23 02:32:00,922 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:32:00,957 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:32:10,700 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:32:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 02:32:10,734 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:32:10] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 02:32:10,734 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:32:10] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 02:32:10,754 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 02:32:10] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 02:49:53,532 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:49:53,620 INFO werkzeug  * Restarting with stat
+2024-09-23 02:49:55,682 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:49:55,719 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:50:06,557 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:50:06,645 INFO werkzeug  * Restarting with stat
+2024-09-23 02:50:08,512 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:50:08,551 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:50:52,652 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:50:52,755 INFO werkzeug  * Restarting with stat
+2024-09-23 02:50:54,610 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:50:54,649 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:51:48,095 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:51:48,176 INFO werkzeug  * Restarting with stat
+2024-09-23 02:51:50,100 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:51:50,145 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:51:59,503 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:51:59,603 INFO werkzeug  * Restarting with stat
+2024-09-23 02:52:01,532 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:52:01,564 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:52:04,371 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:52:04,462 INFO werkzeug  * Restarting with stat
+2024-09-23 02:52:06,441 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:52:06,481 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:52:09,190 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:52:09,301 INFO werkzeug  * Restarting with stat
+2024-09-23 02:52:11,170 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:52:11,203 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:53:14,546 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:53:14,665 INFO werkzeug  * Restarting with stat
+2024-09-23 02:53:16,631 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:53:16,663 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:53:19,413 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:53:19,526 INFO werkzeug  * Restarting with stat
+2024-09-23 02:53:21,346 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:53:21,383 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:53:23,921 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:53:24,026 INFO werkzeug  * Restarting with stat
+2024-09-23 02:53:26,025 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:53:26,061 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:53:33,655 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:53:33,754 INFO werkzeug  * Restarting with stat
+2024-09-23 02:53:35,635 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:53:35,671 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:54:04,862 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:54:04,990 INFO werkzeug  * Restarting with stat
+2024-09-23 02:54:06,835 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:54:06,877 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:54:24,533 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:54:24,636 INFO werkzeug  * Restarting with stat
+2024-09-23 02:54:26,567 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:54:26,604 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:54:44,017 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:54:44,111 INFO werkzeug  * Restarting with stat
+2024-09-23 02:54:45,938 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:54:45,975 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:55:26,169 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:55:26,266 INFO werkzeug  * Restarting with stat
+2024-09-23 02:55:28,295 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:55:28,328 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:55:42,504 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:55:42,624 INFO werkzeug  * Restarting with stat
+2024-09-23 02:55:44,384 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:55:44,415 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:55:47,246 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:55:47,351 INFO werkzeug  * Restarting with stat
+2024-09-23 02:55:49,226 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:55:49,271 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:56:18,227 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:56:18,316 INFO werkzeug  * Restarting with stat
+2024-09-23 02:56:20,179 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:56:20,211 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:56:23,062 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:56:23,187 INFO werkzeug  * Restarting with stat
+2024-09-23 02:56:25,020 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:56:25,057 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:56:40,721 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:56:40,825 INFO werkzeug  * Restarting with stat
+2024-09-23 02:56:42,674 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:56:42,706 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:57:33,495 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:57:33,582 INFO werkzeug  * Restarting with stat
+2024-09-23 02:57:35,422 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:57:35,472 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:57:44,730 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 02:57:44,812 INFO werkzeug  * Restarting with stat
+2024-09-23 02:57:46,713 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:57:46,745 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:58:13,586 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 02:58:13,662 INFO werkzeug  * Restarting with stat
+2024-09-23 02:58:15,581 WARNING werkzeug  * Debugger is active!
+2024-09-23 02:58:15,620 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 02:59:15,687 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 02:59:15,798 INFO werkzeug  * Restarting with stat
+2024-09-23 03:19:01,507 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 03:19:01,507 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 03:19:01,511 INFO werkzeug  * Restarting with stat
+2024-09-23 03:19:03,611 WARNING werkzeug  * Debugger is active!
+2024-09-23 03:19:03,649 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 03:19:08,912 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:19:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 03:19:08,946 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:19:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 03:19:08,947 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:19:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 03:19:08,970 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:19:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 03:20:30,524 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 03:20:30,550 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:30] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 03:20:30,552 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:30] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 03:20:30,569 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:30] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 03:20:49,060 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:49] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-09-23 03:20:49,094 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:49] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 03:20:49,096 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:49] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 03:20:49,109 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:49] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 03:20:49,112 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 03:20:49] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 03:49:19,190 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 03:49:19,293 INFO werkzeug  * Restarting with stat
+2024-09-23 03:49:21,334 WARNING werkzeug  * Debugger is active!
+2024-09-23 03:49:21,371 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 03:49:27,318 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 03:49:27,415 INFO werkzeug  * Restarting with stat
+2024-09-23 03:49:29,161 WARNING werkzeug  * Debugger is active!
+2024-09-23 03:49:29,198 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 03:49:51,760 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 03:49:51,874 INFO werkzeug  * Restarting with stat
+2024-09-23 04:10:44,363 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 04:10:44,364 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 04:10:44,366 INFO werkzeug  * Restarting with stat
+2024-09-23 04:10:46,264 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:10:46,296 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:10:58,526 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:10:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 04:10:58,559 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:10:58] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 04:10:58,560 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:10:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 04:10:58,575 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:10:58] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 04:11:59,631 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:11:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 04:11:59,654 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:11:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 04:11:59,656 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:11:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 04:11:59,668 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:11:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 04:12:58,185 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:12:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 04:12:58,206 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:12:58] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 04:12:58,207 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:12:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 04:12:58,220 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 04:12:58] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 04:18:24,472 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:18:24,568 INFO werkzeug  * Restarting with stat
+2024-09-23 04:18:26,379 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:18:26,427 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:18:29,229 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:18:29,321 INFO werkzeug  * Restarting with stat
+2024-09-23 04:18:31,207 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:18:31,245 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:19:11,108 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:19:11,195 INFO werkzeug  * Restarting with stat
+2024-09-23 04:19:13,111 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:19:13,143 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:19:32,400 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:19:32,519 INFO werkzeug  * Restarting with stat
+2024-09-23 04:19:34,399 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:19:34,435 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:19:35,455 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:19:35,598 INFO werkzeug  * Restarting with stat
+2024-09-23 04:19:37,493 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:19:37,528 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:19:40,162 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:19:40,289 INFO werkzeug  * Restarting with stat
+2024-09-23 04:19:42,260 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:19:42,293 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:19:53,202 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:19:53,297 INFO werkzeug  * Restarting with stat
+2024-09-23 04:19:55,143 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:19:55,174 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:21:47,823 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:21:47,959 INFO werkzeug  * Restarting with stat
+2024-09-23 04:21:49,889 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:21:49,924 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:21:59,222 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:21:59,334 INFO werkzeug  * Restarting with stat
+2024-09-23 04:22:01,164 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:22:01,196 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:22:23,505 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:22:23,605 INFO werkzeug  * Restarting with stat
+2024-09-23 04:22:25,394 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:22:25,427 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:22:31,494 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:22:31,581 INFO werkzeug  * Restarting with stat
+2024-09-23 04:22:33,496 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:22:33,531 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:22:46,364 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:22:46,448 INFO werkzeug  * Restarting with stat
+2024-09-23 04:22:48,493 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:22:48,529 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:22:56,326 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:22:56,423 INFO werkzeug  * Restarting with stat
+2024-09-23 04:22:58,216 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:22:58,262 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:23:01,062 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:23:01,152 INFO werkzeug  * Restarting with stat
+2024-09-23 04:23:03,182 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:23:03,221 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:23:07,430 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:23:07,553 INFO werkzeug  * Restarting with stat
+2024-09-23 04:23:09,486 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:23:09,517 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:23:13,765 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:23:13,879 INFO werkzeug  * Restarting with stat
+2024-09-23 04:23:15,755 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:23:15,792 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:23:31,705 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:23:31,797 INFO werkzeug  * Restarting with stat
+2024-09-23 04:23:33,748 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:23:33,787 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:24:22,527 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:24:22,625 INFO werkzeug  * Restarting with stat
+2024-09-23 04:24:24,515 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:24:24,550 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:24:25,737 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:24:25,823 INFO werkzeug  * Restarting with stat
+2024-09-23 04:24:27,768 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:24:27,801 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:24:32,220 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:24:32,311 INFO werkzeug  * Restarting with stat
+2024-09-23 04:24:34,267 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:24:34,303 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:24:41,931 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:24:42,020 INFO werkzeug  * Restarting with stat
+2024-09-23 04:24:43,918 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:24:43,954 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:24:58,401 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:24:58,503 INFO werkzeug  * Restarting with stat
+2024-09-23 04:25:00,435 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:25:00,474 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:25:01,700 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:25:01,808 INFO werkzeug  * Restarting with stat
+2024-09-23 04:25:03,927 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:25:03,988 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:25:06,642 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:25:06,749 INFO werkzeug  * Restarting with stat
+2024-09-23 04:25:08,841 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:25:08,877 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:25:11,743 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:25:11,831 INFO werkzeug  * Restarting with stat
+2024-09-23 04:25:13,754 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:25:13,800 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:25:18,204 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:25:18,313 INFO werkzeug  * Restarting with stat
+2024-09-23 04:25:20,389 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:25:20,424 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:27:10,831 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:27:10,919 INFO werkzeug  * Restarting with stat
+2024-09-23 04:27:12,766 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:27:12,798 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:27:23,846 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:27:23,944 INFO werkzeug  * Restarting with stat
+2024-09-23 04:27:25,794 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:27:25,829 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:27:27,164 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:27:27,270 INFO werkzeug  * Restarting with stat
+2024-09-23 04:27:29,224 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:27:29,261 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:28:56,513 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:28:56,629 INFO werkzeug  * Restarting with stat
+2024-09-23 04:28:58,523 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:28:58,558 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:29:09,511 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:29:09,604 INFO werkzeug  * Restarting with stat
+2024-09-23 04:29:11,544 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:29:11,579 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:29:25,799 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:29:25,895 INFO werkzeug  * Restarting with stat
+2024-09-23 04:29:27,768 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:29:27,798 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:29:50,295 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:29:50,411 INFO werkzeug  * Restarting with stat
+2024-09-23 04:29:52,201 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:29:52,232 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:30:33,242 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:30:33,344 INFO werkzeug  * Restarting with stat
+2024-09-23 04:30:35,283 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:30:35,316 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:30:39,788 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:30:39,920 INFO werkzeug  * Restarting with stat
+2024-09-23 04:30:41,954 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:30:41,986 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:30:44,590 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:30:44,688 INFO werkzeug  * Restarting with stat
+2024-09-23 04:30:46,629 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:30:46,671 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:31:34,338 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:31:34,459 INFO werkzeug  * Restarting with stat
+2024-09-23 04:31:36,444 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:31:36,475 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:31:41,078 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:31:41,174 INFO werkzeug  * Restarting with stat
+2024-09-23 04:31:42,981 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:31:43,018 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:32:00,507 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 04:32:00,590 INFO werkzeug  * Restarting with stat
+2024-09-23 04:32:02,553 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:32:02,594 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:33:24,215 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 04:33:24,305 INFO werkzeug  * Restarting with stat
+2024-09-23 04:33:26,354 WARNING werkzeug  * Debugger is active!
+2024-09-23 04:33:26,387 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 04:33:27,387 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 04:33:27,507 INFO werkzeug  * Restarting with stat
+2024-09-23 06:12:51,796 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 06:12:51,797 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 06:12:51,799 INFO werkzeug  * Restarting with stat
+2024-09-23 06:12:53,806 WARNING werkzeug  * Debugger is active!
+2024-09-23 06:12:53,850 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 06:13:03,848 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:13:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 06:13:03,889 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:13:03] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:13:03,890 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:13:03] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:13:03,904 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:13:03] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:14:08,097 WARNING werkzeug  * Debugger is active!
+2024-09-23 06:14:08,097 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 06:14:08,230 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 06:14:08,230 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 06:14:08,230 INFO werkzeug  * Restarting with stat
+2024-09-23 06:14:10,046 WARNING werkzeug  * Debugger is active!
+2024-09-23 06:14:10,080 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 06:14:14,063 WARNING werkzeug  * Debugger is active!
+2024-09-23 06:14:14,064 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 06:14:19,500 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 06:14:19,501 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 06:14:19,503 INFO werkzeug  * Restarting with stat
+2024-09-23 06:14:21,499 WARNING werkzeug  * Debugger is active!
+2024-09-23 06:14:21,533 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 06:14:29,130 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:14:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 06:14:29,176 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:14:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:14:29,178 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:14:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:14:29,202 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:14:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:17:46,800 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:17:46] "GET / HTTP/1.1" 200 -
+2024-09-23 06:17:46,818 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:17:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:17:57,677 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:17:57] "GET / HTTP/1.1" 200 -
+2024-09-23 06:17:57,699 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:17:57] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:18:00,778 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:00] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-09-23 06:18:00,803 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:00] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:18:00,804 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:00] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:18:00,814 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:00] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:18:44,144 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:44] "GET / HTTP/1.1" 200 -
+2024-09-23 06:18:44,161 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:18:48,760 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:48] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-09-23 06:18:48,791 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:48] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:18:48,792 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:48] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 06:18:48,800 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:48] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:18:48,802 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:48] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:18:54,920 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:54] "[35m[1mGET /shoppingcarts HTTP/1.1[0m" 500 -
+2024-09-23 06:18:54,938 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:54] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:18:54,939 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:54] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 06:18:54,950 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:54] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:18:54,952 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:18:54] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:19:06,175 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:19:06] "[35m[1mGET /login_manager HTTP/1.1[0m" 500 -
+2024-09-23 06:19:06,213 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:19:06] "GET /login_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:19:06,216 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:19:06] "GET /login_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 06:19:06,231 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:19:06] "GET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:19:06,234 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:19:06] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:20:44,046 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:20:44] "GET / HTTP/1.1" 200 -
+2024-09-23 06:20:44,071 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:20:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:24:13,308 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:24:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 06:24:13,328 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:24:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:24:13,329 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:24:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:24:13,349 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:24:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:27:25,800 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:27:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 06:27:25,840 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:27:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:27:25,841 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:27:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:27:25,862 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:27:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:27:55,832 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:27:55] "GET / HTTP/1.1" 200 -
+2024-09-23 06:27:55,851 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:27:55] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:29:15,657 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:29:15] "GET / HTTP/1.1" 200 -
+2024-09-23 06:29:15,674 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:29:15] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:29:15,679 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:29:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-23 06:30:56,951 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:30:56] "GET / HTTP/1.1" 200 -
+2024-09-23 06:30:56,967 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:30:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:31:09,342 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:09] "GET / HTTP/1.1" 200 -
+2024-09-23 06:31:09,360 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:31:12,529 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:12] "GET / HTTP/1.1" 200 -
+2024-09-23 06:31:12,545 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:12] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:31:17,273 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:17] "GET / HTTP/1.1" 200 -
+2024-09-23 06:31:17,296 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:17] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:31:20,192 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:20] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-09-23 06:31:20,215 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:20] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:31:20,217 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:20] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 06:31:20,229 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:20] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:31:20,231 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:31:20] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:34:09,458 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:34:09] "GET / HTTP/1.1" 200 -
+2024-09-23 06:34:09,478 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:34:09] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:37:17,570 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:37:17] "GET / HTTP/1.1" 200 -
+2024-09-23 06:37:17,585 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:37:17] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:38:39,202 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:38:39] "GET / HTTP/1.1" 200 -
+2024-09-23 06:38:39,222 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:38:39] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:39:26,490 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:39:26] "GET / HTTP/1.1" 200 -
+2024-09-23 06:39:26,508 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:39:26] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:41:46,954 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:41:46] "GET / HTTP/1.1" 200 -
+2024-09-23 06:41:46,971 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:41:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:45:46,754 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:45:46] "GET / HTTP/1.1" 200 -
+2024-09-23 06:45:46,775 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:45:46] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:46:48,062 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:48] "GET / HTTP/1.1" 200 -
+2024-09-23 06:46:48,082 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:48] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:46:50,124 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:50] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-09-23 06:46:50,157 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:50] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:46:50,159 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:50] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:46:50,173 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:50] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:46:50,177 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:50] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:46:57,279 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:57] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-09-23 06:46:57,298 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:57] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:46:57,301 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:57] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:46:57,312 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:46:57] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:47:02,042 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:02] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-09-23 06:47:02,067 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:02] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:47:02,069 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:47:02,080 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:02] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:47:02,082 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:47:05,708 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:05] "[35m[1mGET /shoppingcarts HTTP/1.1[0m" 500 -
+2024-09-23 06:47:05,728 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:05] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:47:05,729 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:05] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:47:05,739 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:05] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:47:05,745 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:05] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:47:09,382 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:47:09] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 06:52:03,394 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:03] "[35m[1mPOST /register_manager HTTP/1.1[0m" 500 -
+2024-09-23 06:52:03,420 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:03] "GET /register_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:52:03,422 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:03] "GET /register_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 06:52:03,434 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:03] "GET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:52:03,437 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:03] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:52:15,241 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:15] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 06:52:21,709 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:21] "GET / HTTP/1.1" 200 -
+2024-09-23 06:52:21,737 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:21] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 06:52:24,411 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:24] "[35m[1mGET /login_manager HTTP/1.1[0m" 500 -
+2024-09-23 06:52:24,443 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:24] "GET /login_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 06:52:24,444 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:24] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:52:24,457 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:24] "GET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 06:52:24,460 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:24] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 06:52:28,406 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:28] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-23 06:52:28,456 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:28] "[35m[1mGET /login_manager HTTP/1.1[0m" 500 -
+2024-09-23 06:52:28,489 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:28] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 06:52:28,490 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:28] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 06:52:28,502 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 06:52:28] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 07:42:09,075 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:09] "[35m[1mGET /login_manager HTTP/1.1[0m" 500 -
+2024-09-23 07:42:09,111 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:09] "GET /login_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 07:42:09,114 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:09] "GET /login_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 07:42:09,128 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:09] "GET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 07:42:09,131 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:09] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 07:42:11,257 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-23 07:42:12,423 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:12] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-23 07:42:12,473 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:12] "[35m[1mGET /login_manager HTTP/1.1[0m" 500 -
+2024-09-23 07:42:12,508 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:12] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 07:42:12,509 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:12] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 07:42:12,523 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:12] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 07:42:23,177 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:42:23] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 07:47:16,467 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 07:47:16] "GET /register HTTP/1.1" 200 -
+2024-09-23 08:02:07,803 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:02:07] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:02:31,877 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:02:31] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 08:04:32,190 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:04:32] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:04:34,215 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:04:34] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:04:39,782 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:04:39] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 08:08:40,055 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:08:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-23 08:08:48,796 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:08:48] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:08:58,737 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:08:58] "GET /register HTTP/1.1" 200 -
+2024-09-23 08:09:07,832 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:09:07] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-09-23 08:09:07,856 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:09:07] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 08:09:07,858 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:09:07] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 08:09:07,876 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:09:07] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 08:09:07,880 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:09:07] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 08:46:55,438 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:46:55] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 08:47:02,193 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:47:02] "GET /register_manager HTTP/1.1" 200 -
+2024-09-23 08:47:05,851 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:47:05] "GET / HTTP/1.1" 200 -
+2024-09-23 08:47:05,874 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:47:05] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 08:47:12,290 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:47:12] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:51:29,152 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:51:29] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:53:19,486 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:53:19] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:53:58,920 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:53:58] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 08:54:29,585 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 08:54:29] "GET /login_manager HTTP/1.1" 200 -
+2024-09-23 09:03:59,697 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:03:59] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-09-23 09:03:59,724 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:03:59] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 09:03:59,724 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:03:59] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 09:03:59,736 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:03:59] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 09:09:44,720 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:09:44] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-09-23 09:09:44,739 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:09:44] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 09:09:44,740 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:09:44] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 09:09:44,757 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:09:44] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 09:13:43,997 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 09:13:44,140 INFO werkzeug  * Restarting with stat
+2024-09-23 09:13:46,185 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:13:46,220 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:13:48,844 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 09:13:48,956 INFO werkzeug  * Restarting with stat
+2024-09-23 09:13:50,838 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:13:50,874 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:13:56,836 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 09:13:56,943 INFO werkzeug  * Restarting with stat
+2024-09-23 09:13:58,840 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:13:58,878 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:15:04,176 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:15:04,267 INFO werkzeug  * Restarting with stat
+2024-09-23 09:15:06,305 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:15:06,350 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:15:10,796 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:15:10,927 INFO werkzeug  * Restarting with stat
+2024-09-23 09:15:13,016 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:15:13,055 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:15:38,903 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:15:38,992 INFO werkzeug  * Restarting with stat
+2024-09-23 09:15:40,876 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:15:40,913 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:15:47,522 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:15:47] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-09-23 09:15:47,559 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:15:47] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 09:15:47,560 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:15:47] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 09:15:47,580 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:15:47] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 09:21:11,073 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:21:11,200 INFO werkzeug  * Restarting with stat
+2024-09-23 09:21:13,151 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:21:13,183 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:21:15,874 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:21:15,987 INFO werkzeug  * Restarting with stat
+2024-09-23 09:21:17,954 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:21:17,986 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:23:42,760 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:23:42,875 INFO werkzeug  * Restarting with stat
+2024-09-23 09:23:45,100 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:23:45,139 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:24:02,941 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:24:03,045 INFO werkzeug  * Restarting with stat
+2024-09-23 09:24:05,052 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:24:05,089 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:24:15,811 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:24:15,931 INFO werkzeug  * Restarting with stat
+2024-09-23 09:24:18,009 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:24:18,069 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:24:24,077 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:24:24,195 INFO werkzeug  * Restarting with stat
+2024-09-23 09:24:26,175 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:24:26,208 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:25:57,345 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:25:57,455 INFO werkzeug  * Restarting with stat
+2024-09-23 09:25:59,536 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:25:59,591 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:26:02,421 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:26:02,539 INFO werkzeug  * Restarting with stat
+2024-09-23 09:26:04,543 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:26:04,579 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:26:05,603 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:26:05,690 INFO werkzeug  * Restarting with stat
+2024-09-23 09:26:07,702 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:26:07,736 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:26:43,400 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:26:43,499 INFO werkzeug  * Restarting with stat
+2024-09-23 09:26:45,483 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:26:45,516 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:27:01,668 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:27:01,777 INFO werkzeug  * Restarting with stat
+2024-09-23 09:27:03,708 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:27:03,748 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:27:09,942 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:27:10,051 INFO werkzeug  * Restarting with stat
+2024-09-23 09:27:11,992 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:27:12,027 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:27:29,636 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:27:29,775 INFO werkzeug  * Restarting with stat
+2024-09-23 09:27:31,790 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:27:31,826 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:28:40,376 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:28:40,465 INFO werkzeug  * Restarting with stat
+2024-09-23 09:28:42,430 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:28:42,466 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:28:48,260 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:28:48,354 INFO werkzeug  * Restarting with stat
+2024-09-23 09:28:50,284 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:28:50,317 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:29:19,137 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:29:19,229 INFO werkzeug  * Restarting with stat
+2024-09-23 09:29:21,001 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:29:21,038 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:31:27,816 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:31:27] "[35m[1mPOST /login_manager HTTP/1.1[0m" 500 -
+2024-09-23 09:31:27,840 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:31:27] "GET /login_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 09:31:27,842 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:31:27] "GET /login_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 09:31:27,854 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:31:27] "GET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 09:31:27,857 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:31:27] "[36mGET /login_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 09:46:47,934 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:46:48,043 INFO werkzeug  * Restarting with stat
+2024-09-23 09:46:50,018 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:46:50,050 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:47:14,197 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 09:47:14,307 INFO werkzeug  * Restarting with stat
+2024-09-23 09:50:10,844 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 09:50:10,844 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 09:50:10,847 INFO werkzeug  * Restarting with stat
+2024-09-23 09:50:12,898 WARNING werkzeug  * Debugger is active!
+2024-09-23 09:50:12,938 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 09:50:18,556 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:50:18] "GET /login HTTP/1.1" 200 -
+2024-09-23 09:50:48,275 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:50:48] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 09:50:48,303 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:50:48] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 09:50:48,304 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:50:48] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 09:50:48,313 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:50:48] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 09:56:13,686 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:13] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 09:56:13,703 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:13] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 09:56:13,704 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:13] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 09:56:13,722 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:13] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 09:56:18,792 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:18] "GET /login HTTP/1.1" 200 -
+2024-09-23 09:56:41,357 DEBUG __init__ db connected
+2024-09-23 09:56:41,399 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:41] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 09:56:41,455 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:41] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 09:56:41,458 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:41] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 09:56:41,492 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 09:56:41] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:00:03,572 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:00:03,695 INFO werkzeug  * Restarting with stat
+2024-09-23 10:00:05,526 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:00:05,559 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:00:08,250 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:00:08,373 INFO werkzeug  * Restarting with stat
+2024-09-23 10:00:10,302 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:00:10,339 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:01:33,492 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:01:33] "GET /login HTTP/1.1" 200 -
+2024-09-23 10:01:47,222 DEBUG __init__ db connected
+2024-09-23 10:01:47,251 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:01:47] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 10:01:47,274 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:01:47] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:01:47,275 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:01:47] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:01:47,288 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:01:47] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:04:05,525 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:04:05,647 INFO werkzeug  * Restarting with stat
+2024-09-23 10:04:07,579 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:04:07,615 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:04:31,438 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:04:31,543 INFO werkzeug  * Restarting with stat
+2024-09-23 10:04:33,545 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:04:33,578 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:04:44,540 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:04:44,624 INFO werkzeug  * Restarting with stat
+2024-09-23 10:04:46,575 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:04:46,620 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:04:57,634 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:04:57,743 INFO werkzeug  * Restarting with stat
+2024-09-23 10:04:59,548 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:04:59,596 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:05:09,386 DEBUG __init__ db connected
+2024-09-23 10:05:09,412 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:09] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 10:05:09,434 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:09] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:05:09,436 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:09] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:05:09,449 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:09] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:05:18,253 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:18] "GET / HTTP/1.1" 200 -
+2024-09-23 10:05:18,284 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:18] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 10:05:21,426 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:21] "GET /login HTTP/1.1" 200 -
+2024-09-23 10:05:34,872 DEBUG __init__ db connected
+2024-09-23 10:05:34,911 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:34] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 10:05:34,940 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:34] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:05:34,941 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:34] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:05:34,959 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:05:34] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:06:45,224 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:06:45,321 INFO werkzeug  * Restarting with stat
+2024-09-23 10:06:47,298 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:06:47,333 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:07:29,540 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:07:29,649 INFO werkzeug  * Restarting with stat
+2024-09-23 10:07:31,662 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:07:31,697 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:07:52,802 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:07:52,904 INFO werkzeug  * Restarting with stat
+2024-09-23 10:07:54,757 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:07:54,796 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:11:31,480 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:11:31,604 INFO werkzeug  * Restarting with stat
+2024-09-23 10:11:33,683 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:11:33,730 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:11:35,051 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:11:35,148 INFO werkzeug  * Restarting with stat
+2024-09-23 10:11:37,123 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:11:37,179 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:11:40,050 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:11:40,160 INFO werkzeug  * Restarting with stat
+2024-09-23 10:11:42,116 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:11:42,161 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:12:47,637 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:12:47,737 INFO werkzeug  * Restarting with stat
+2024-09-23 10:12:49,716 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:12:49,755 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:14:00,820 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:14:00,926 INFO werkzeug  * Restarting with stat
+2024-09-23 10:14:02,900 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:14:02,932 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:14:35,593 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:14:35,696 INFO werkzeug  * Restarting with stat
+2024-09-23 10:14:37,457 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:14:37,502 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:14:45,220 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:14:45,307 INFO werkzeug  * Restarting with stat
+2024-09-23 10:14:47,171 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:14:47,215 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:15:47,918 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:15:48,009 INFO werkzeug  * Restarting with stat
+2024-09-23 10:15:50,071 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:15:50,108 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:16:27,422 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:16:27,514 INFO werkzeug  * Restarting with stat
+2024-09-23 10:16:29,352 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:16:29,393 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:16:32,201 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 10:16:32,324 INFO werkzeug  * Restarting with stat
+2024-09-23 10:16:34,140 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:16:34,173 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:16:42,867 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:16:42,867 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:16:42,986 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 10:16:42,986 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 10:16:42,986 INFO werkzeug  * Restarting with stat
+2024-09-23 10:16:44,948 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:16:44,987 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:16:46,347 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:16:46,347 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:16:52,499 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 10:16:52,500 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 10:16:52,502 INFO werkzeug  * Restarting with stat
+2024-09-23 10:16:54,451 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:16:54,498 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:17:06,412 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:17:06] "GET / HTTP/1.1" 200 -
+2024-09-23 10:17:06,439 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:17:06] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 10:17:11,569 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:17:11] "GET /login HTTP/1.1" 200 -
+2024-09-23 10:18:19,496 DEBUG __init__ db connected
+2024-09-23 10:18:19,531 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:18:19] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-23 10:18:19,555 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:18:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:18:19,558 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:18:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:18:19,571 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:18:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:25:29,267 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:25:29,352 INFO werkzeug  * Restarting with stat
+2024-09-23 10:25:31,451 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:25:31,488 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:25:34,341 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:25:34,441 INFO werkzeug  * Restarting with stat
+2024-09-23 10:39:28,761 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 10:39:28,761 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 10:39:28,764 INFO werkzeug  * Restarting with stat
+2024-09-23 10:39:30,919 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:39:30,970 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:39:59,743 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:39:59] "GET / HTTP/1.1" 200 -
+2024-09-23 10:39:59,768 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:39:59] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 10:40:28,198 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:40:28] "GET /register HTTP/1.1" 200 -
+2024-09-23 10:41:52,088 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:41:52] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-09-23 10:41:52,106 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:41:52] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 10:41:52,108 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:41:52] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 10:41:52,119 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:41:52] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 10:41:52,121 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:41:52] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:43:22,178 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:43:22,281 INFO werkzeug  * Restarting with stat
+2024-09-23 10:43:24,329 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:43:24,361 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:43:28,895 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:43:29,013 INFO werkzeug  * Restarting with stat
+2024-09-23 10:43:30,954 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:43:30,989 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:43:52,030 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:43:52,153 INFO werkzeug  * Restarting with stat
+2024-09-23 10:43:54,143 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:43:54,187 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:44:00,216 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:44:00,324 INFO werkzeug  * Restarting with stat
+2024-09-23 10:44:02,283 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:44:02,319 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:44:13,259 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:44:13,346 INFO werkzeug  * Restarting with stat
+2024-09-23 10:44:15,253 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:44:15,284 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:44:18,172 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:44:18,284 INFO werkzeug  * Restarting with stat
+2024-09-23 10:44:20,236 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:44:20,273 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:44:51,154 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:44:51] "GET / HTTP/1.1" 200 -
+2024-09-23 10:44:51,183 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:44:51] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 10:44:54,128 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:44:54] "GET /register HTTP/1.1" 200 -
+2024-09-23 10:45:30,954 DEBUG __init__ db connected
+2024-09-23 10:45:30,999 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:45:30] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-09-23 10:45:31,028 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:45:31] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:45:31,029 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:45:31] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:45:31,042 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:45:31] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:48:05,327 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:48:05,442 INFO werkzeug  * Restarting with stat
+2024-09-23 10:48:07,303 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:48:07,345 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:48:10,222 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:48:10,334 INFO werkzeug  * Restarting with stat
+2024-09-23 10:48:12,232 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:48:12,277 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:48:49,862 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:48:49,996 INFO werkzeug  * Restarting with stat
+2024-09-23 10:48:51,871 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:48:51,906 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:48:56,328 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:48:56,428 INFO werkzeug  * Restarting with stat
+2024-09-23 10:48:58,318 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:48:58,353 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:49:01,166 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:49:01,268 INFO werkzeug  * Restarting with stat
+2024-09-23 10:49:03,259 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:49:03,299 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:49:06,000 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:49:06,097 INFO werkzeug  * Restarting with stat
+2024-09-23 10:49:08,160 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:49:08,199 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:49:24,425 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:49:24,528 INFO werkzeug  * Restarting with stat
+2024-09-23 10:49:26,390 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:49:26,428 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:49:44,169 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:49:44,294 INFO werkzeug  * Restarting with stat
+2024-09-23 10:49:46,213 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:49:46,254 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:50:06,104 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:50:06,222 INFO werkzeug  * Restarting with stat
+2024-09-23 10:50:08,351 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:50:08,387 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:50:17,727 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:50:17,827 INFO werkzeug  * Restarting with stat
+2024-09-23 10:50:19,733 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:50:19,772 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:50:32,481 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:50:32,599 INFO werkzeug  * Restarting with stat
+2024-09-23 10:50:34,535 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:50:34,585 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:51:03,972 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:51:04,071 INFO werkzeug  * Restarting with stat
+2024-09-23 10:51:06,052 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:51:06,099 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:51:23,864 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:51:23,969 INFO werkzeug  * Restarting with stat
+2024-09-23 10:51:26,076 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:51:26,109 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:51:45,422 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:51:45,511 INFO werkzeug  * Restarting with stat
+2024-09-23 10:51:47,458 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:51:47,496 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:51:53,470 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:51:53,575 INFO werkzeug  * Restarting with stat
+2024-09-23 10:51:55,537 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:51:55,586 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:52:36,851 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:52:36,987 INFO werkzeug  * Restarting with stat
+2024-09-23 10:52:38,988 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:52:39,034 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:52:46,807 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 10:52:46,898 INFO werkzeug  * Restarting with stat
+2024-09-23 10:52:48,923 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:52:48,956 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:53:06,640 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:53:06,771 INFO werkzeug  * Restarting with stat
+2024-09-23 10:53:08,691 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:53:08,736 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:53:13,154 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:53:13,272 INFO werkzeug  * Restarting with stat
+2024-09-23 10:53:15,078 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:53:15,125 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:53:23,098 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:53:23,098 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:53:23,214 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 10:53:23,214 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 10:53:23,214 INFO werkzeug  * Restarting with stat
+2024-09-23 10:53:29,056 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 10:53:29,057 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 10:53:29,062 INFO werkzeug  * Restarting with stat
+2024-09-23 10:53:31,088 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:53:31,124 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:53:38,515 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:53:38] "GET / HTTP/1.1" 200 -
+2024-09-23 10:53:38,549 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:53:38] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 10:53:41,947 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:53:41] "GET /register HTTP/1.1" 200 -
+2024-09-23 10:54:30,290 DEBUG __init__ db connected
+2024-09-23 10:54:30,345 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:54:30] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-09-23 10:54:30,378 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:54:30] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:54:30,379 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:54:30] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:54:30,397 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:54:30] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 10:55:45,317 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:55:45,428 INFO werkzeug  * Restarting with stat
+2024-09-23 10:55:47,428 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:55:47,460 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:55:50,126 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:55:50,229 INFO werkzeug  * Restarting with stat
+2024-09-23 10:55:52,217 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:55:52,255 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:55:55,049 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:55:55,133 INFO werkzeug  * Restarting with stat
+2024-09-23 10:55:57,085 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:55:57,117 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:56:04,822 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 10:56:04,951 INFO werkzeug  * Restarting with stat
+2024-09-23 10:56:06,765 WARNING werkzeug  * Debugger is active!
+2024-09-23 10:56:06,806 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 10:56:19,030 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:56:19] "GET / HTTP/1.1" 200 -
+2024-09-23 10:56:19,057 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:56:19] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 10:56:21,515 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:56:21] "GET /register HTTP/1.1" 200 -
+2024-09-23 10:57:10,580 DEBUG __init__ db connected
+2024-09-23 10:57:10,608 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:57:10] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-09-23 10:57:10,637 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:57:10] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 10:57:10,638 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:57:10] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 10:57:10,650 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 10:57:10] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 11:00:17,347 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 11:00:17,463 INFO werkzeug  * Restarting with stat
+2024-09-23 11:00:19,534 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:00:19,570 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:00:23,956 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 11:00:24,050 INFO werkzeug  * Restarting with stat
+2024-09-23 11:00:25,969 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:00:26,002 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:00:32,074 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 11:00:32] "GET /register HTTP/1.1" 200 -
+2024-09-23 11:01:13,146 DEBUG __init__ db connected
+2024-09-23 11:01:13,223 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 11:01:13] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-09-23 11:01:13,245 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 11:01:13] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 11:01:13,247 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 11:01:13] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 11:01:13,264 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 11:01:13] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 11:02:17,324 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 11:02:17,430 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:19,481 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:19,523 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:02:23,742 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_customer.py', reloading
+2024-09-23 11:02:23,836 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:25,607 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:25,638 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:02:30,098 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:02:30,188 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:32,076 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:32,107 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:02:33,342 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:02:33,434 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:35,468 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:35,503 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:02:38,159 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:02:38,254 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:40,239 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:40,274 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:02:48,361 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:02:48,474 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:50,333 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:50,365 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:02:53,202 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:02:53,305 INFO werkzeug  * Restarting with stat
+2024-09-23 11:02:55,493 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:02:55,525 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:03:41,243 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:03:41,329 INFO werkzeug  * Restarting with stat
+2024-09-23 11:03:43,295 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:03:43,331 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:03:49,415 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:03:49,503 INFO werkzeug  * Restarting with stat
+2024-09-23 11:03:51,388 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:03:51,420 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:04:03,736 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:04:03,823 INFO werkzeug  * Restarting with stat
+2024-09-23 11:04:05,828 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:04:05,863 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:05:24,600 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:05:24,706 INFO werkzeug  * Restarting with stat
+2024-09-23 11:05:26,710 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:05:26,752 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:05:45,867 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-23 11:05:45,964 INFO werkzeug  * Restarting with stat
+2024-09-23 11:05:47,845 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:05:47,882 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:06:36,638 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_manager.py', reloading
+2024-09-23 11:06:36,753 INFO werkzeug  * Restarting with stat
+2024-09-23 11:06:38,872 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:06:38,926 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:06:41,809 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_manager.py', reloading
+2024-09-23 11:06:41,887 INFO werkzeug  * Restarting with stat
+2024-09-23 11:06:43,802 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:06:43,838 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:06:46,398 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_manager.py', reloading
+2024-09-23 11:06:46,493 INFO werkzeug  * Restarting with stat
+2024-09-23 11:06:48,554 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:06:48,599 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:06:49,696 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_manager.py', reloading
+2024-09-23 11:06:49,786 INFO werkzeug  * Restarting with stat
+2024-09-23 11:06:51,805 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:06:51,840 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:07:09,671 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_manager.py', reloading
+2024-09-23 11:07:09,771 INFO werkzeug  * Restarting with stat
+2024-09-23 11:07:11,566 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:07:11,601 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:08:43,545 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-23 11:08:43,667 INFO werkzeug  * Restarting with stat
+2024-09-23 11:52:04,591 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 11:52:04,592 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 11:52:04,596 INFO werkzeug  * Restarting with stat
+2024-09-23 11:52:06,645 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:52:06,687 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:58:03,079 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:58:03,079 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:58:03,202 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 11:58:03,202 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 11:58:03,202 INFO werkzeug  * Restarting with stat
+2024-09-23 11:58:14,055 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 11:58:14,055 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 11:58:14,060 INFO werkzeug  * Restarting with stat
+2024-09-23 11:58:16,073 WARNING werkzeug  * Debugger is active!
+2024-09-23 11:58:16,103 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 11:59:00,283 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 11:59:00] "GET / HTTP/1.1" 200 -
+2024-09-23 12:13:11,615 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 12:13:11,615 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 12:13:11,624 INFO werkzeug  * Restarting with stat
+2024-09-23 12:13:13,514 WARNING werkzeug  * Debugger is active!
+2024-09-23 12:13:13,567 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 12:13:37,648 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:37] "GET / HTTP/1.1" 200 -
+2024-09-23 12:13:37,682 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:37] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 12:13:37,902 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-23 12:13:46,777 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:46] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-09-23 12:13:46,825 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:46] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 12:13:46,833 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:46] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 12:13:46,859 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:46] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 12:13:46,873 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:13:46] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 12:14:32,566 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:14:32] "GET /login HTTP/1.1" 200 -
+2024-09-23 12:14:54,142 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:14:54] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2024-09-23 12:14:54,183 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:14:54] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 12:14:54,185 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:14:54] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 12:14:54,194 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:14:54] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 12:18:07,918 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:18:07] "GET /register HTTP/1.1" 200 -
+2024-09-23 12:19:36,627 DEBUG __init__ db connected
+2024-09-23 12:19:36,643 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:36] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-09-23 12:19:36,650 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:36] "GET /register HTTP/1.1" 200 -
+2024-09-23 12:19:56,540 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:56] "[35m[1mGET /register_manager HTTP/1.1[0m" 500 -
+2024-09-23 12:19:56,575 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:56] "GET /register_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 12:19:56,575 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:56] "GET /register_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 12:19:56,591 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:56] "GET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 12:19:56,595 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 12:19:56] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:19:27,157 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:19:27,157 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:19:27,163 INFO werkzeug  * Restarting with stat
+2024-09-23 13:19:29,347 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:19:29,382 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:19:44,835 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:44] "GET / HTTP/1.1" 200 -
+2024-09-23 13:19:44,861 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:44] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 13:19:51,213 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:51] "GET /register HTTP/1.1" 200 -
+2024-09-23 13:19:54,644 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:54] "GET /login HTTP/1.1" 200 -
+2024-09-23 13:19:56,476 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:56] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-09-23 13:19:56,501 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:56] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 13:19:56,505 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:56] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 13:19:56,514 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:56] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 13:19:56,518 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:19:56] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:21:57,646 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 13:21:57,753 INFO werkzeug  * Restarting with stat
+2024-09-23 13:21:59,688 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:21:59,724 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:22:05,583 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\customer_dashboard.py', reloading
+2024-09-23 13:22:05,677 INFO werkzeug  * Restarting with stat
+2024-09-23 13:22:07,449 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:22:07,482 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:22:30,217 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:30] "GET / HTTP/1.1" 200 -
+2024-09-23 13:22:30,247 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:30] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-23 13:22:34,524 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:34] "[35m[1mGET /shoppingcarts HTTP/1.1[0m" 500 -
+2024-09-23 13:22:34,549 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:34] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 13:22:34,550 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:34] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 13:22:34,562 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:34] "GET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 13:22:34,565 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:22:34] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:27:23,538 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:27:23,630 INFO werkzeug  * Restarting with stat
+2024-09-23 13:27:25,503 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:27:25,538 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:27:29,959 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:27:30,054 INFO werkzeug  * Restarting with stat
+2024-09-23 13:27:31,877 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:27:31,910 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:27:41,182 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:27:41,273 INFO werkzeug  * Restarting with stat
+2024-09-23 13:27:43,080 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:27:43,127 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:27:45,435 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:27:45] "[35m[1mGET /shoppingcarts HTTP/1.1[0m" 500 -
+2024-09-23 13:27:45,455 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:27:45] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:27:45,457 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:27:45] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:27:45,472 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:27:45] "[36mGET /shoppingcarts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:29:08,525 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:29:08,613 INFO werkzeug  * Restarting with stat
+2024-09-23 13:33:44,794 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:33:44,795 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:33:44,797 INFO werkzeug  * Restarting with stat
+2024-09-23 13:33:46,664 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:33:46,694 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:33:59,103 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:33:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:33:59,144 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:33:59] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-23 13:33:59,146 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:33:59] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-23 13:33:59,168 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:33:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-23 13:33:59,171 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:33:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:35:36,545 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 13:35:36,628 INFO werkzeug  * Restarting with stat
+2024-09-23 13:35:38,486 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:35:38,519 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:35:51,045 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 13:35:51,164 INFO werkzeug  * Restarting with stat
+2024-09-23 13:35:53,126 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:35:53,159 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:36:16,006 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 13:36:16,107 INFO werkzeug  * Restarting with stat
+2024-09-23 13:36:18,086 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:36:18,130 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:37:02,326 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcarts.py', reloading
+2024-09-23 13:37:02,444 INFO werkzeug  * Restarting with stat
+2024-09-23 13:38:11,516 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:38:11,516 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:38:11,519 INFO werkzeug  * Restarting with stat
+2024-09-23 13:38:13,390 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:38:13,430 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:38:28,046 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:38:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:38:28,070 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:38:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:38:28,072 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:38:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:38:28,097 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:38:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:39:41,740 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcarts.py', reloading
+2024-09-23 13:39:41,851 INFO werkzeug  * Restarting with stat
+2024-09-23 13:40:40,633 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:40:40,633 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:40:40,638 INFO werkzeug  * Restarting with stat
+2024-09-23 13:40:42,453 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:40:42,501 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:40:53,418 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:40:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:40:53,447 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:40:53] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:40:53,450 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:40:53] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:40:53,465 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:40:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:45:01,868 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 13:45:01,958 INFO werkzeug  * Restarting with stat
+2024-09-23 13:48:06,224 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:48:06,225 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:48:06,227 INFO werkzeug  * Restarting with stat
+2024-09-23 13:48:08,142 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:48:08,177 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:48:12,971 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:48:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:48:13,019 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:48:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:48:13,020 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:48:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:48:13,034 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:48:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:49:49,460 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:49:49,566 INFO werkzeug  * Restarting with stat
+2024-09-23 13:49:51,447 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:49:51,484 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:00,894 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:00,994 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:02,851 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:02,885 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:07,212 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:07,303 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:09,242 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:09,274 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:13,644 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:13,745 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:15,685 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:15,725 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:25,067 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:25,167 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:27,091 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:27,129 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:33,088 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:33,180 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:35,135 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:35,168 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:39,441 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:39,540 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:41,435 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:41,468 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:50:53,760 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:50:53,863 INFO werkzeug  * Restarting with stat
+2024-09-23 13:50:55,812 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:50:55,849 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:51:10,126 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:51:10,215 INFO werkzeug  * Restarting with stat
+2024-09-23 13:52:56,729 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:52:56,730 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:52:56,733 INFO werkzeug  * Restarting with stat
+2024-09-23 13:52:58,737 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:52:58,772 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:53:01,854 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:53:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:53:01,892 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:53:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:53:01,894 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:53:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:53:01,909 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:53:01] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:53:57,410 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\__init__.py', reloading
+2024-09-23 13:53:57,503 INFO werkzeug  * Restarting with stat
+2024-09-23 13:57:21,065 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-23 13:57:21,066 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-23 13:57:21,071 INFO werkzeug  * Restarting with stat
+2024-09-23 13:57:23,099 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:57:23,143 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:57:28,921 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:57:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:57:28,956 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:57:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:57:28,956 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:57:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:57:28,973 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:57:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:58:42,814 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:58:42,926 INFO werkzeug  * Restarting with stat
+2024-09-23 13:58:44,714 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:58:44,747 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:58:47,352 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:58:47,428 INFO werkzeug  * Restarting with stat
+2024-09-23 13:58:49,343 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:58:49,380 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:58:56,138 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:58:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-09-23 13:58:56,174 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:58:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-23 13:58:56,175 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:58:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-23 13:58:56,191 INFO werkzeug 127.0.0.1 - - [23/Sep/2024 13:58:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-23 13:59:27,891 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:59:28,004 INFO werkzeug  * Restarting with stat
+2024-09-23 13:59:29,808 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:59:29,841 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-23 13:59:40,562 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-23 13:59:40,650 INFO werkzeug  * Restarting with stat
+2024-09-23 13:59:42,642 WARNING werkzeug  * Debugger is active!
+2024-09-23 13:59:42,685 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:54:30,793 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-24 12:54:30,794 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-24 12:54:30,804 INFO werkzeug  * Restarting with stat
+2024-09-24 12:54:32,614 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:54:32,683 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:54:52,626 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:54:52] "GET / HTTP/1.1" 200 -
+2024-09-24 12:54:52,673 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:54:52] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-24 12:54:53,378 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:54:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 12:55:11,177 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:55:11] "GET /register HTTP/1.1" 200 -
+2024-09-24 12:55:14,222 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:55:14] "[35m[1mGET /register_manager HTTP/1.1[0m" 500 -
+2024-09-24 12:55:14,268 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:55:14] "GET /register_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-24 12:55:14,277 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:55:14] "GET /register_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-24 12:55:14,297 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:55:14] "GET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-24 12:55:14,303 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:55:14] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 12:56:13,275 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-24 12:56:13,360 INFO werkzeug  * Restarting with stat
+2024-09-24 12:56:15,272 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:56:15,311 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:56:17,976 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-24 12:56:18,076 INFO werkzeug  * Restarting with stat
+2024-09-24 12:56:19,929 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:56:19,967 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:56:27,700 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:27] "[35m[1mGET /register_manager HTTP/1.1[0m" 500 -
+2024-09-24 12:56:27,741 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:27] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 12:56:27,742 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:27] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 12:56:27,762 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:27] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 12:56:47,623 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:47] "GET / HTTP/1.1" 200 -
+2024-09-24 12:56:47,652 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:47] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-24 12:56:50,755 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:50] "[35m[1mGET /register_manager HTTP/1.1[0m" 500 -
+2024-09-24 12:56:50,787 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:50] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 12:56:50,790 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:50] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 12:56:50,807 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:56:50] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 12:57:50,231 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\register_manager.py', reloading
+2024-09-24 12:57:50,326 INFO werkzeug  * Restarting with stat
+2024-09-24 12:57:52,197 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:57:52,231 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:57:58,771 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:57:58,772 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:57:58,963 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-24 12:57:58,963 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-24 12:57:58,964 INFO werkzeug  * Restarting with stat
+2024-09-24 12:58:04,047 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-24 12:58:04,047 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-24 12:58:04,050 INFO werkzeug  * Restarting with stat
+2024-09-24 12:58:05,911 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:58:05,953 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:58:16,180 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:16] "GET / HTTP/1.1" 200 -
+2024-09-24 12:58:16,208 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:16] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-24 12:58:20,676 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:20] "GET /register HTTP/1.1" 200 -
+2024-09-24 12:58:27,530 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:27] "GET /login HTTP/1.1" 200 -
+2024-09-24 12:58:46,248 DEBUG __init__ db connected
+2024-09-24 12:58:46,321 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:46] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-09-24 12:58:46,368 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:46] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-24 12:58:46,370 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:46] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-24 12:58:46,389 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:46] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-24 12:58:46,392 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:58:46] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 12:59:19,595 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-24 12:59:19,704 INFO werkzeug  * Restarting with stat
+2024-09-24 12:59:27,044 WARNING werkzeug  * Debugger is active!
+2024-09-24 12:59:27,092 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 12:59:27,721 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:59:27] "GET /login HTTP/1.1" 200 -
+2024-09-24 12:59:30,491 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:59:30] "[35m[1mGET /register_manager HTTP/1.1[0m" 500 -
+2024-09-24 12:59:30,518 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:59:30] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 12:59:30,520 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:59:30] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 12:59:30,543 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 12:59:30] "[36mGET /register_manager?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 13:00:26,537 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:26] "GET /register_manager HTTP/1.1" 200 -
+2024-09-24 13:00:26,577 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-24 13:00:33,347 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:33] "[35m[1mGET /shoppingcart/carts HTTP/1.1[0m" 500 -
+2024-09-24 13:00:33,371 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:33] "GET /shoppingcart/carts?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-24 13:00:33,371 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:33] "GET /shoppingcart/carts?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-24 13:00:33,383 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:33] "GET /shoppingcart/carts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-24 13:00:33,385 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:00:33] "[36mGET /shoppingcart/carts?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 13:01:25,474 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:01:25,574 INFO werkzeug  * Restarting with stat
+2024-09-24 13:01:27,462 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:01:27,497 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:01:28,572 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:01:28,686 INFO werkzeug  * Restarting with stat
+2024-09-24 13:01:30,650 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:01:30,685 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:01:44,774 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:01:44,883 INFO werkzeug  * Restarting with stat
+2024-09-24 13:01:46,810 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:01:46,848 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:01:49,425 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:01:49,525 INFO werkzeug  * Restarting with stat
+2024-09-24 13:01:51,467 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:01:51,517 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:01:57,435 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:01:57,532 INFO werkzeug  * Restarting with stat
+2024-09-24 13:01:59,421 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:01:59,456 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:02:08,564 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:02:08,659 INFO werkzeug  * Restarting with stat
+2024-09-24 13:02:10,622 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:02:10,659 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:02:18,208 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\shoppingcart.py', reloading
+2024-09-24 13:02:18,303 INFO werkzeug  * Restarting with stat
+2024-09-24 13:02:20,184 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:02:20,221 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:02:24,202 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:02:24] "GET /login HTTP/1.1" 200 -
+2024-09-24 13:02:27,576 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:02:27] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-09-24 13:02:27,603 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:02:27] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-09-24 13:02:27,604 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:02:27] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-09-24 13:02:27,616 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:02:27] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-09-24 13:02:27,618 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:02:27] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 13:03:33,524 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:33] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:36,428 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:36] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-24 13:03:36,433 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:36] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:38,789 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:38] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-24 13:03:38,805 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:38] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:42,713 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:42] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-24 13:03:42,717 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:42] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:43,840 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:43] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:45,454 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:45] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-24 13:03:45,458 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:45] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:46,839 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:46] "[32mGET /logout_manager HTTP/1.1[0m" 302 -
+2024-09-24 13:03:46,843 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:46] "GET /login_manager HTTP/1.1" 200 -
+2024-09-24 13:03:50,455 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:50] "GET /login HTTP/1.1" 200 -
+2024-09-24 13:03:56,776 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:56] "GET / HTTP/1.1" 200 -
+2024-09-24 13:03:56,799 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:56] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-09-24 13:03:59,555 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:03:59] "GET /register HTTP/1.1" 200 -
+2024-09-24 13:04:01,575 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:04:01] "GET /login HTTP/1.1" 200 -
+2024-09-24 13:04:02,709 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:04:02] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2024-09-24 13:04:02,733 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:04:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-09-24 13:04:02,737 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:04:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-09-24 13:04:02,751 INFO werkzeug 127.0.0.1 - - [24/Sep/2024 13:04:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-09-24 13:04:20,308 INFO werkzeug  * Detected change in 'C:\\Users\\Composer\\Documents\\TSOHA2024\\TsohaProject2024\\localmusicstore\\localMStore\\app\\routes\\login_customer.py', reloading
+2024-09-24 13:04:20,404 INFO werkzeug  * Restarting with stat
+2024-09-24 13:04:22,252 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:04:22,284 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:05:18,211 WARNING werkzeug  * Debugger is active!
+2024-09-24 13:05:18,211 INFO werkzeug  * Debugger PIN: 136-484-107
+2024-09-24 13:05:18,347 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-24 13:05:18,347 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-09-24 13:05:18,347 INFO werkzeug  * Restarting with stat

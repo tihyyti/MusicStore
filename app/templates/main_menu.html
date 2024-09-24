@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shopping cart</title>
+    <title>Music Store</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h5>* Shopping cart *</h5>
     <header>
-        <h5>* Store manager registration *</h5>
+        <h5>  * WELCOME * Explore our wide range of music instruments and manage your shopping cart and account ! </h5>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -18,24 +17,19 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('login_customer.login_customer') }}">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customer dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_shoppingcart') }}">Shopping Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager. register_manager') }}">Register manager</a></li>
-                    <li class="nav-item"><Login class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_all_shoppingcarts') }}">Shopping Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
                 </ul>
             </div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a>
-            </ul>
         </nav>
-        <p></p>
     </header>
     <main class="container mt-4">
-        <p>Your shopping cart is currently empty.</p>
+        <p></p>
     </main>
-    <footer class="text-center mt-4">
-        <p>© 2024 Music Store</p>
+    <footer class="text-left mt-4">
+        <p>© Music Store 2024</p>
     </footer>
 </body>
 </html>

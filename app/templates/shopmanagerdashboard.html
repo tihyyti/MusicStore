@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shop Manager Dashboard</title>
+    <title>Store manager dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
-        <h1>Shop Manager Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('login') }}">Login</a></li>
-                <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                <li><a href="{{ url_for('shoppingcart') }}">Shopping Cart</a></li>
-                <li><a href="{{ url_for('custodashboard') }}">Customer Dashboard</a></li>
-                <li><a href="{{ url_for('shopmanagerdashboard') }}">Shop Manager Dashboard</a></li>
+    <h5>* Store manager dashboard *</h5>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Music Store</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('login_customer.login_customer') }}">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customer dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_shoppingcart') }}">Shopping Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
             </ul>
-        </nav>
+        </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a>
+        </ul>
+    </nav>
+    <p></p>
     </header>
     <main>
         <section id="store-details">

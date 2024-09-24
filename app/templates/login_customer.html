@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Store Manager Login</title>
+    <title>Customer Login</title>
     <!-- Include Bootstrap styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
 </head>
 <body>
     <header>
-        <h5>* Manager Login *</h5>
+        <h5>* Customer Login *</h5>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}
+                    ">Register customer</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('login_customer.login_customer') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customer dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customerdashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_all_shoppingcarts') }}">Shopping Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Registermanager</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
                 </ul>
@@ -32,13 +33,13 @@
         <p></p>
     </header>
     <main>
-        <h6>Enter your username and password to login as a store manager.</h6>
+        <h6>Enter your username and password to login as a customer and start shopping.</h6>
         <p></p>
         <form method="post">
-            <label for="storeManagerName">Username:</label>
-            <input type="text" id="storeManagerName" name="storeManagerName" required>
-            <label for="storeManagerPssw">Password:</label>
-            <input type="password" id="storeManagerPassw" name="storeManagerPassw" required>
+            <label for="customerName">Username:</label>
+            <input type="text" id="custoName" name="custoName" required>
+            <label for="customerPssw">Password:</label>
+            <input type="password" id="custoPassw" name="custoPassw" required>
             <button type="submit">Login</button>
         </form>
     </main>

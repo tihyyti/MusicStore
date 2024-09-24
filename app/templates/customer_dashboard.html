@@ -8,20 +8,27 @@
 </head>
 <body>
     <header>
-        <h1>Customer Dashboard</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h5>* Store manager registration *</h5>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Logout</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart') }}">Shopping Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('custodashboard') }}">Customer Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</</li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer. register_customer') }}">Register customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login_customer.login_customer') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customer dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_all_shoppingcarts') }}">Shopping Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
                 </ul>
             </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a>
+            </ul>
         </nav>
+        <p></p>
     </header>
     <main class="container mt-4">
         <section id="account-details">

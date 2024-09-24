@@ -1,11 +1,11 @@
 from flask import Blueprint, render_template
 import templates
 
-mainmenu_bp = Blueprint('mainmenu', __name__)
+home_bp = Blueprint('home', __name__)
 
-@mainmenu_bp.route('/')
-def mainmenu():
-    return render_template('main_menu.html')
+@home_bp.route('/home')
+def home():
+    return render_template('home.html')
 
 if __name__ == "__main__":
     from my_flask_app import create_app
