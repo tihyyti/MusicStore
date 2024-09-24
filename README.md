@@ -1,4 +1,5 @@
 # MusicStore
+Added 2024_09_24: Commit: Mainmenu navbar, new routes and related templates, partly tested also.
 
 MusicStore_v1  2024_09_22 Status report/ Thy / MS Copilot used as an AI-assistant
 - user stories done
