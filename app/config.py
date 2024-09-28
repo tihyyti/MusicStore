@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 class Config:
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL',
-    'postgresql://postgres:postinLent0@localhost:5432/MStore_v1')
+    'postgresql://postgres:password@localhost:5432/MStore_v1')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     ENVIRONMENT = "development"
     FLASK_APP = "app"
