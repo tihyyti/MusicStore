@@ -20,25 +20,29 @@ CREATE TABLE MStore_v1.Customer (
     id SERIAL NOT NULL PRIMARY KEY,
     Store_id INT NOT NULL,
     custoName VARCHAR(50) NOT NULL UNIQUE,
-    custoPassw VARCHAR(20) NOT NULL UNIQUE,
+    custoPassw VARCHAR(70) NOT NULL UNIQUE,
     custoEmail VARCHAR(50) DEFAULT NULL,
     custoPhone VARCHAR(20) DEFAULT NULL,
     custoStatus BOOLEAN DEFAULT FALSE, -- loyalty card owner or not
-    custoBlocked BOOLEAN DEFAULT FALSE
+    custoBlocked BOOLEAN DEFAULT FALSE,
+    last_login TIMESTAMP NOT NULL,
+    custopassw VARCHAR(80) NOT NULL
     --FOREIGN KEY(Store_id) REFERENCES MStore_v1.Store(id)
 );
 
 CREATE TABLE MStore_v1.Store (
     id SERIAL NOT NULL PRIMARY KEY,
     storeManagerName VARCHAR(50) NOT NULL UNIQUE,
-    storeManagerPssw VARCHAR(20) DEFAULT NULL,
+    storeManagerPassw VARCHAR(70) DEFAULT NULL,
     storeName VARCHAR(40) NOT NULL,
     storeTaxId VARCHAR(16) NOT NULL UNIQUE,
     storePhone VARCHAR(20) NOT NULL UNIQUE,
     storeEmail VARCHAR(25) NOT NULL UNIQUE,
     storeAddress VARCHAR(40) NOT NULL UNIQUE,
     storeLogoUrl VARCHAR(140) DEFAULT NULL, -- Link to the actual image file
-    storeManager_id INT
+    storeManager_id INT,
+    last_login TIMESTAMP NOT NULL,
+    storeManagerPassw VARCHAR(80) NOT NULL
     --FOREIGN KEY(storeManager_id) REFERENCES MStore_v1.Customer(id)
 );
 
@@ -46,9 +50,9 @@ CREATE TABLE MStore_v1.ProductGroup (
     id SERIAL NOT NULL PRIMARY KEY,
     Store_id INT NOT NULL,
     prodGroupName VARCHAR(80) NOT NULL UNIQUE,
-    prodGrDiscount DECIMAL(10, 2) DEFAULT 0.00, 
+    prodGrDiscount DECIMAL(10, 2) DEFAULT 0.00,
 	-- percent of discount per group
-    prodGrVatPercent DECIMAL(10, 2) DEFAULT 0.00, 
+    prodGrVatPercent DECIMAL(10, 2) DEFAULT 0.00,
 	-- Percent of Value Added Tax of group
     -- Cumulative monthly saldo fields for one year (3 times 12 fields)
     monthlySales_01 DECIMAL(10, 2) DEFAULT 0.00,

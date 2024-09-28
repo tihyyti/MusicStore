@@ -1,0 +1,7 @@
+ALTER TABLE MStore_v1.Store
+ALTER COLUMN storeManagerPassw
+TYPE VARCHAR(80);
+
+ALTER TABLE MStore_v1.Customer
+ALTER COLUMN custoPassw
+TYPE VARCHAR(80);

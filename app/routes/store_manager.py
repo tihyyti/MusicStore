@@ -2,6 +2,7 @@ from flask import Blueprint, request, render_template, redirect, url_for, flash,
 import psycopg2
 import bcrypt
 from datetime import datetime
+from __init__ import db, logger
 
 store_manager_bp = Blueprint('store_manager', __name__)
 
@@ -9,24 +10,37 @@ store_manager_bp = Blueprint('store_manager', __name__)
 def login_manager():
     if request.method == 'POST':
         storeManagerName = request.form['storeManagerName']
-        storeManagerPssw = request.form['storeManagerPssw']
+        storeManagerPassw = request.form['storeManagerPassw']
 
         conn = db.engine.raw_connection()
         cur = conn.cursor()
-        cur.execute("SELECT id, storeManagerPssw FROM Store WHERE storeManagerName = %s", (storeManagerName,))
-        manager = cur.fetchone()
+        cur.execute(
+            "SELECT id, storeManagerPassw FROM mstore_v1.Store WHERE storeManagerName = %s",
+            (storeManagerName,),
+        )
+        storemanager = cur.fetchone()
 
-        if manager and bcrypt.checkpw(storeManagerPssw.encode('utf-8'), manager[1].encode('utf-8')):
-            session['manager_id'] = manager[0]
-            cur.execute("UPDATE Store SET last_login = %s WHERE id = %s", (datetime.now(), manager[0]))
-            conn.commit()
-            flash('Login successful!', 'success')
-            return redirect(url_for('store_manager.manager_dashboard'))
+        if storemanager is not None:
+            if storemanager and bcrypt.checkpw(storeManagerPassw.encode('utf-8'), storemanager[1].  encode('utf-8')):
+                session['storemanager'] = storemanager[0]
+                cur.execute(
+                    "UPDATE mstore_v1.Store SET last_login = %s WHERE id = %s",
+                    (datetime.now(), storemanager[0]),
+                )
+                conn.commit()
+                cur.close()
+                conn.close()
+                flash('Login successful!', 'success')
+                return redirect(url_for('mainmenu.mainmenu'))
+            else:
+                cur.close()
+                conn.close()
+                flash('Invalid username or password.', 'danger')
+                logger.error('Store Manager not found')
+                return redirect(url_for("mainmenu.mainmenu"))
         else:
-            flash('Invalid username or password.', 'danger')
-
-        cur.close()
-        conn.close()
+            flash('No store manager record in the system !.', 'danger')
+            logger.error('Customer not found')
 
     return render_template('login_manager.html')
 
@@ -37,14 +51,14 @@ def manager_dashboard():
         cur = conn.cursor()
 
         # Fetch KPIs
-        cur.execute("SELECT total_sales FROM TotalSales")
-        total_sales = cur.fetchone()[0]
+        # cur.execute("SELECT total_sales FROM TotalSales")
+        # total_sales = cur.fetchone()[0]
 
-        cur.execute("SELECT total_profit FROM TotalProfit")
-        total_profit = cur.fetchone()[0]
+        # cur.execute("SELECT total_profit FROM TotalProfit")
+        # total_profit = cur.fetchone()[0]
 
-        cur.execute("SELECT total_discounts FROM TotalDiscounts")
-        total_discounts = cur.fetchone()[0]
+        # cur.execute("SELECT total_discounts FROM TotalDiscounts")
+        # total_discounts = cur.fetchone()[0]
 
         cur.close()
         conn.close()

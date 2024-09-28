@@ -14,8 +14,10 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('login_customer.login_customer') }}">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customer dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}
+                ">Logout</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_shoppingcart') }}">Shopping Cart</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }">Login</a></li>

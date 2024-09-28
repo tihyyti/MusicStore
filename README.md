@@ -137,7 +137,7 @@ music-store/
 │   ├── __init__.py
 │   ├── routes/
 │   │   ├── home.py
-│   │   ├── customer_dashboard.py
+│   │   ├── customer.py
 │   │   ├── store_manager.py
 |   |
 │   └── templates/

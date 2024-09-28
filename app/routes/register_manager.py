@@ -1,44 +1,78 @@
 from flask import Blueprint, request, render_template, redirect, url_for, flash
+from flask_bcrypt import Bcrypt
 import psycopg2
-import bcrypt
+from datetime import datetime
 from __init__ import db, logger
 
 managerregist_bp = Blueprint('register_manager', __name__)
+bcrypt = Bcrypt()
 
 @managerregist_bp.route('/register_manager', methods=['GET', 'POST'])
 def register_manager():
     if request.method == 'POST':
         storeManagerName = request.form['storeManagerName']
-        storeManagerPssw = request.form['storeManagerPssw']
+        storeManagerPassw = request.form['storeManagerPassw']
         storeName = request.form['storeName']
         storeTaxId = request.form['storeTaxId']
         storePhone = request.form['storePhone']
         storeEmail = request.form['storeEmail']
         storeAddress = request.form['storeAddress']
         storeLogoUrl = request.form.get('storeLogoUrl')
-        storeManager_id = request.form['storeManager_id']
+        storeManager_id = request.form["managers_customer_id"]
 
-        #hashed_passw = bcrypt.hashpw(storeManagerPssw.encode('utf-8'), bcrypt.gensalt())
-        #storeManagerPssw  = hashed_passw
+        # Hash the password
+        storeManagerPsw = bcrypt.generate_password_hash(storeManagerPassw).decode("utf-8")
 
-        conn = db.engine.raw_connect
-        cur = conn.cursor()
-        logger.debug('db connected')
+        last_login = datetime.now()
+        conn = None
+        cur = None
 
         try:
-            cur.execute("""
-                INSERT INTO Store (storeManagerName, storeManagerPssw, storeName, storeTaxId, storePhone, storeEmail, storeAddress, storeLogoUrl, storeManager_id)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """, (storeManagerName, storeManagerPssw, storeName, storeTaxId, storePhone, storeEmail, storeAddress, storeLogoUrl, storeManager_id))
-            conn.commit()
-            flash('Store Manager registration successful!', 'success')
-        except psycopg2.IntegrityError:
-            conn.rollback()
-            flash('Store Manager registration failed. Please check your inputs.', 'danger')
-        finally:
-            cur.close()
-            conn.close()
+            conn = db.engine.raw_connection()
+            cur = conn.cursor()
+            logger.debug('db connected')
 
-        return redirect(url_for('mainmenu.mainmenu'))
+            cur.execute(
+                """
+                INSERT INTO mstore_v1.Store (storemanagername, storename, storetaxid,
+                storephone, storeemail, storeaddress, storelogourl, storemanager_id,
+                last_login, storemanagerpassw) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""",
+                (
+                    storeManagerName,
+                    storeName,
+                    storeTaxId,
+                    storePhone,
+                    storeEmail,
+                    storeAddress,
+                    storeLogoUrl,
+                    storeManager_id,
+                    last_login,
+                    storeManagerPsw,
+                ),
+            )
+            conn.commit()
+            logger.debug("db committed successfully")
+            flash('Store Manager registration successful!', 'success')
+
+        except psycopg2.IntegrityError as e:
+            if conn:
+                conn.rollback()
+            logger.error(f"IntegrityError: {e}")
+            flash('Store Manager registration failed. Please check your inputs.', 'danger')
+            return redirect(url_for('register_manager.register_manager'))
+
+        except Exception as e:
+            if conn:
+                conn.rollback()
+            logger.error(f"Error: {e}")
+            flash('An error occurred. Please try again.', 'danger')
+            return redirect(url_for('mainmenu.mainmenu'))
+
+        finally:
+            if cur:
+                cur.close()
+            if conn:
+                conn.close()
+            return redirect(url_for('mainmenu.mainmenu'))
 
     return render_template('register_manager.html')

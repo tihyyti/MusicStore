@@ -5,6 +5,9 @@
     <title>Music Store</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Flash Messages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+ad>
 </head>
 <body>
     <header>
@@ -15,9 +18,10 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login_customer.login_customer') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_dashboard.customer_dashboard') }}">Customer dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.get_all_shoppingcarts') }}">Shopping Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Shopping Cart</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
@@ -28,6 +32,16 @@
     <main class="container mt-4">
         <p></p>
     </main>
+    <div class="flash-messages"></div>
+     {% with messages = get_flashed_messages(with_categories=true) %}
+         {% if messages %}
+             {% for category, message in messages %}
+                 <div class="alert alert-{{ category }}">{{ message }}</div>
+             {% endfor %}
+         {% endif %}
+     {% endwith %}
+    </div>
+ <script src="{{ url_for('static', filename='scripts.js') }}"></script>
     <footer class="text-left mt-4">
         <p>© Music Store 2024</p>
     </footer>

@@ -1,43 +1,73 @@
-
 from flask import Blueprint, request, render_template, redirect, url_for, flash
+from flask_bcrypt import Bcrypt
 import psycopg2
-import bcrypt
+from datetime import datetime
 from __init__ import db, logger
 
-customerregist_bp = Blueprint('register_customer', __name__)
-@customerregist_bp.route('/register', methods=['GET', 'POST'])
+customerregist_bp = Blueprint("register_customer", __name__)
+
+bcrypt = Bcrypt()
+@customerregist_bp.route("/register_customer", methods=["GET", "POST"])
 def register_customer():
-    if request.method == 'POST':
+    if request.method == "POST":
         custoName = request.form['custoName']
         custoPassw = request.form['custoPassw']
         custoEmail = request.form.get('custoEmail')
         custoPhone = request.form.get('custoPhone')
         custoStatus = False
         custoBlocked = False
+        # Hash the password
+        custoPsw = bcrypt.generate_password_hash(custoPassw).decode("utf-8")
+        last_login = datetime.now()
+        conn = None
+        cur = None
 
-        #hashed_passw = bcrypt.hashpw(custoPassw.encode('utf-8'), bcrypt.gensalt())
-        #custoPassw = hashed_passw
+        # Check if email is already registered
 
-        conn = db.engine.raw_connection()
-        cur = conn.cursor()
-        logger.debug('db connected')
+        # Hash the password
+        custoPsw = bcrypt.generate_password_hash(custoPassw).decode("utf-8")
+
+        last_login = datetime.now()
+        conn = None
+        cur = None
+
         try:
-            cur.execute("""
-                INSERT INTO Customer (store_id, custoName, custoPassw, custoEmail, custoPhone, custoStatus, custoBlocked)
-                VALUES (%s, %s, %s, %s, %s, %s, %s)
-            """, (1, custoName, custoPassw, custoEmail, custoPhone, custoStatus, custoBlocked))
+            conn = db.engine.raw_connection()
+            cur = conn.cursor()
+            logger.debug("db connected")
+
+            cur.execute(
+            """
+            INSERT INTO mstore_v1.Customer (store_id, custoName, custoEmail,
+            custoPhone, custoStatus, custoBlocked, last_login, custoPassw)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)""",
+            (
+                1,
+                custoName,
+                custoEmail,
+                custoPhone,
+                custoStatus,
+                custoBlocked,
+                last_login,
+                custoPsw,
+                ),
+            )
             conn.commit()
-            flash('Registration successful!', 'success')
-        except psycopg2.IntegrityError:
-            conn.rollback()
-            flash('Username or password already exists.', 'danger')
+            logger.debug("db committed successfully")
+            flash('Customer registration successful!', 'success')
+
+        except Exception as e:
+            if conn:
+                conn.rollback()
+            logger.error(f"Error: {e}")
+            flash("An error occurred. Please try again.", "danger")
+            return redirect(url_for("mainmenu.mainmenu"))
+
         finally:
-            cur.close()
-            conn.close()
+            if cur:
+                cur.close()
+            if conn:
+                conn.close()
+            return redirect(url_for("mainmenu.mainmenu"))
 
-        return redirect(url_for('register_customer.register_customer'))
-
-    return render_template('register_customer.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
+    return render_template("register_customer.html")

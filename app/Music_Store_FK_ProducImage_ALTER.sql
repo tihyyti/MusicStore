@@ -6,3 +6,8 @@ DROP CONSTRAINT fk_product_to_productimage;
 ALTER TABLE MStore_v1.Product
 ADD CONSTRAINT fk_product_to_producimage
 FOREIGN KEY (productimage_id) REFERENCES MStore_v1.Productimage(id);
+ALTER TABLE Store
+ADD last_login DATE;
+
+ALTER TABLE Customer
+ADD last_login DATE;
