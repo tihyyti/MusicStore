@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h5>* Basic listings *</h5>
+        <h5>* View shopping carts *</h5>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,7 +24,7 @@
                     ">Logout</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Shopping Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
                 </ul>
             </div>
@@ -65,6 +65,9 @@
                 {% endfor %}
             </tbody>
         </table>
+        <p>Total Price: {{ cart.total_price }}</p>
+        <p>Total Discount: {{ cart.total_discount }}</p>
+        <p>Total VAT: {{ cart.total_vat }}</p>
         <a href="{{ url_for('custodashboard') }}" class="btn btn-primary">Back to Dashboard</a>
     </main>
     <footer class="text-center mt-4">

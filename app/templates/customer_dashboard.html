@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <h5>* Store manager registration *</h5>
+        <h5>* Customer Dashboard *</h5>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</</li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer. register_customer') }}">Register customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
@@ -33,22 +33,21 @@
     </header>
     <main class="container mt-4">
         <section id="account-details">
-            <p>Name: {{ customer_details[2] }}</p>
-            <p>Email: {{ customer_details[4] }}</p>
-            <p>Phone: {{ customer_details[5] }}</p>
+            <h4>Account details</h4>
+            <p>custoID: {{ custo_id }}</p>
+            <p>Name: {{ custo_name }}</p>
         </section>
-        <section id="order-history">
-            <h2>Order History</h2>
-            {% for order in order_history %}
-                <div class="order">
-                    <p>Order ID: {{ order[0] }}</p>
-                    <p>Total: {{ order[1] }}</p>
+        <section id="customer-kpis">
+            <h4>Customer KPIs</h4>
+                <div class="kpis">
+                    <p>Total SUM: {{ sales }}</p>
+                    <p>Total DISCOUNT: {{ discount }}</p>
+                    <p>Total VAT: {{ vat }}</p>
                 </div>
-            {% endfor %}
         </section>
         <section id="shopping-carts">
-            <h2>Shopping Carts</h2>
-            <a href="{{ url_for('customer_shopping_carts') }}" class="btn btn-primary">View Shopping Carts</a>
+            <h4>Shopping Carts</h4>
+            <!-- <a href="{{ url_for('customer.shoppingcarts', customer_id=custo_id) }}" class="btn btn-primary">View Shopping Carts</a> -->
         </section>
     </main>
     <footer class="text-center mt-4">

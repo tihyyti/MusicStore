@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
      <title>Flash Messages</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src
+    'self' https://stackpath.bootstrapcdn.com; style-src 'self' https://stackpath.
+    bootstrapcdn.com https://cdn.datatables.net;">
 </head>
 <body>
     <header>
@@ -38,6 +42,7 @@
     <div class="container">
         <h3>Store Manager Registration</h3>
         <form method="POST" action="{{ url_for('register_manager.register_manager') }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div class="form-group">
                 <label for="storeManagerName">Manager Name</label>
                 <input type="text" class="form-control" id="storeManagerName" name="storeManagerName" required>

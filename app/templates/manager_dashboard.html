@@ -2,66 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Store manager Dashboard</title>
+    <title>Customer Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
-    <h5>* Store manager dashboard *</h5>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Music Store</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</
-a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }} ">Register customer</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}
-                ">Logout</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Shopping Cart</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
+        <h5>* Customer Dashboard *</h5>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Music Store</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</</li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Shopping Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a>
             </ul>
-        </div>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a>
-        </ul>
-    </nav>
-    <p></p>
+        </nav>
+        <p></p>
     </header>
     <main class="container mt-4">
-        <section id="kpis">
-            <h2>Key Performance Indicators (KPIs)</h2>
-            <ul>
-                <li>Total Sales: €{{ total_sales }}</li>
-                <li>Total Profit: €{{ total_profit }}</li>
-                <li>Total Discounts: €{{ total_discounts }}</li>
-            </ul>
+        <section id="account-details">
+            <h6>Account details</h6>
+            <p>custoID: {{ custo_id }}</p>
+            <p>Name: {{ custo_name }}</p>
         </section>
-        <section id="reports">
-            <h2>Reports</h2>
-            <ul>
-                <li><a href="{{ url_for('report', report_name='CustomersShoppingCartReport') }}">Customers' Shopping Cart Report</a></li>
-                <li><a href="{{ url_for('report', report_name='TotalSalesAndProfitMarginPerProductGroupReport') }}">Total Sales and Profit Margin per Product Group Report</a></li>
-                <li><a href="{{ url_for('report', report_name='CampaignSalesAndProfitMarginReport') }}">Campaign Sales and Profit Margin Report</a></li>
-                <li><a href="{{ url_for('report', report_name='BestSellingProductsReport') }}">Best Selling Products Report</a></li>
-                <li><a href="{{ url_for('report', report_name='BestBuyingCustomersReport') }}">Best Buying Customers Report</a></li>
-            </ul>
+        <section id="customer-kpis">
+            <h6>Customer KPIs</h6>
+                <div class="kpis">
+                    <p>Total SUM: {{ sales }}</p>
+                    <p>Total DISCOUNT: {{ discount }}</p>
+                    <p>Total VAT: {{ vat }}</p>
+                </div>
         </section>
-        <section id="basic-listings">
-            <h2>Basic Information Listings</h2>
-            <ul>
-                <li><a href="{{ url_for('basic_listing', listing_name='RegisteredCustomers') }}">Registered Customers</a></li>
-                <li><a href="{{ url_for('basic_listing', listing_name='ProductAssortment') }}">Product Assortment</a></li>
-                <li><a href="{{ url_for('basic_listing', listing_name='ProductGroups') }}">Product Groups</a></li>
-                <li><a href="{{ url_for('basic_listing', listing_name='MusicStoreAttributes') }}">Music Store Attributes</a></li>
-            </ul>
+        <section id="shopping-carts">
+            <h2>Shopping Carts</h2>
+            <a href="{{ url_for('customer.shoppingcarts', customer_id=custo_id) }}" class="btn btn-primary">View Shopping Carts</a>
         </section>
-        <a href="{{ url_for('logout_manager') }}" class="btn btn-danger">Logout</a>
     </main>
     <footer class="text-center mt-4">
         <p>© 2024 Music Store</p>

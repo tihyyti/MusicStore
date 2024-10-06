@@ -1,0 +1,3 @@
+"id","cartstore_id","cartcustomer_id","cartstatus","cartvat","cartdiscount","carttotal","cartcurrenttime","carteditedtime","cartpurchasedtime","cartdeliverytime"
+1,1,1,False,"50","10","100","2024-09-21 12:48:56.81711","2024-09-21 12:48:56.81711","2024-09-21 12:48:56.81711","2024-09-21 12:48:56.81711"
+2,2,3,True,"100","20","200","2024-09-21 12:48:56.81711","2024-09-21 12:48:56.81711","2024-09-21 12:48:56.81711","2024-09-21 12:48:56.81711"
