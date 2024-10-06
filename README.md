@@ -94,7 +94,8 @@ CREATE TABLE mstore_v1.products (
 );
 
 Populating Tables:
-Insert initial data into the tables: (This is just an EXAMPLE, not the MStore_v1 db)
+Insert initial data into the tables: 
+(This is just an EXAMPLE, not the MStore_v1 db)
 INSERT INTO mstore_v1.users (username, email, password) VALUES
 ('john_doe', 'john@example.com', 'securepassword'),
 ('jane_doe', 'jane@example.com', 'anothersecurepassword');
@@ -119,9 +120,13 @@ TBD later on...
 
 10. Using .env Files
 Benefits of Using .env Files:
-Security: .env files help keep sensitive information like database credentials, API keys, and other configuration details out of your source code
-Environment-Specific Configurations: They allow you to easily switch between different configurations for development, testing, and production environments without changing your code.
-Simplified Configuration Management: By centralizing configuration settings in a single file, .env files make it easier to manage and update configurations.
+Security: .env files help keep sensitive information like database credentials,
+API keys, and other configuration details out of your source code
+Environment-Specific Configurations: They allow you to easily switch between
+different configurations for development, testing, and production environments without changing your code.
+Simplified Configuration Management: By centralizing configuration settings
+in a single file, .env files make it easier to manage and update configurations.
+
 How to Use .env Files:
 Create a .env File: In the root directory of your project, create a file named .env.
 Add Environment Variables: Add your environment-specific variables in the format KEY=VALUE. 
