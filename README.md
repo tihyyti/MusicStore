@@ -1,3 +1,16 @@
+
+# MusicStore
+Added 2024_10_06: Commit: Customer and Store Manager registrations, logins and logouts, small Customer and Store Manager Dashboards, security improvements: SQLi XXS, CSRF, .env/secret config, input-forms validations, new db tables normalized joinin table for shoppingcart and products, Product table foreig keys reduced essentially.
+
+STATUS 2024.10.06:
+1. Customer and Store Manager registrations logins and logout implemented and tested. Added forms-input validations with regular expressions and input sanitazion (tested functionality).
+2. Security improvement: Mitigation of SQLi, XXS and RSRF-attacks (works).
+3. Small Customer (tested) and Store Manager (almost fully tested, some known problems) dashboards.
+4. More effective database solution: new normalized shoppingcartproduct table, which solves the earlier shopping cart capacity limitation and reduces FK-complexity.
+   This speeds up shopping cart and sales functionalities.
+5. Used indexin of db-tables, which essentially speeds up the realtime sales functions of the MusiStore.
+6. Next: taking under development the realtime sales functions and reporting based on sql-views for the Store Manager Dashboard.
+
 # MusicStore
 Added 2024_09_24: Commit: Mainmenu navbar, new routes and related templates, partly tested also.
 
