@@ -12,6 +12,7 @@ STATUS 2024.10.06: 	Note: MS Copilot AI used as assisting development tool in th
 6. Next: taking under development the realtime sales functions and reporting based on sql-views for the Store Manager Dashboard.
 
 Music Store System Installation and Configuration Guide, v2 for Linux
+SEE ATTACHED FORMATTED .PDF VERSION (in app-directory in this MusicStore-repo)
 This document should provide a comprehensive guide for setting up the Music Store System on a Linux platform, including detailed steps for installation, configuration, and database setup.  The guide is designed for IT students withbasic   knowledge of Flask, Python, HTML, and databases.
 
 Index:
