@@ -16,16 +16,10 @@
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.
-                    mainmenu') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_mainmenu.customer_mainmenu') }}">Customer menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}
                     ">Logout</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Shopping Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
                 </ul>
             </div>
             <ul class="navbar-nav ml-auto">
@@ -57,6 +51,9 @@
                     <td>{{ cart.customer_name }}</td>
                     <td>{{ cart.cart_id }}</td>
                     <td>{{ cart.cart_status }}</td>
+                    <td>{{ cart.carttotal }}</td>
+                    <td>{{ cart.cartdiscount }}</td>
+                    <td>{{ cart.cartvat }}</td>
                     <td>{{ cart.edited_time }}</td>
                     <td>{{ cart.purchased_time }}</td>
                     <td>{{ cart.delivery_time }}</td>
@@ -65,10 +62,7 @@
                 {% endfor %}
             </tbody>
         </table>
-        <p>Total Price: {{ cart.total_price }}</p>
-        <p>Total Discount: {{ cart.total_discount }}</p>
-        <p>Total VAT: {{ cart.total_vat }}</p>
-        <a href="{{ url_for('custodashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+        <a href="{{ url_for('customer.customer_dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
     </main>
     <footer class="text-center mt-4">
         <p>© 2024 Music Store</p>

@@ -1,7 +1,8 @@
 
-# Includes db access functions add_product_to_cart, update_product_quantity, delete_product_from_cart, finalize_purchase, get_cart_contents
+# Includes db access functions:
+# add_product_to_cart, update_product_quantity, delete_product_from_cart, finalize_purchase, get_cart_contents
 
-from flask import Flask, request, jsonify, Blueprint, request, render_template, redirect, url_for, flash
+from flask import Flask, request, jsonify, session, Blueprint, request, render_template, redirect, url_for, flash
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from __init__ import db, logger
@@ -41,11 +42,13 @@ def finalize_purchase_route():
     finalize_purchase(cart_id)
     return jsonify({'message': 'Purchase finalized'})
 
-@shoppingcart_bp.route('/cart-contents/<int:cart_id>', methods=['GET'])
+@shoppingcart_bp.route('/cart-contents/<int:cart_id>', methods=['GET', 'POST'])
 def cart_contents(cart_id):
-
+    print(f"shoppingcart.cart_contents: Received cart_id: {cart_id}")
     contents = get_cart_contents(cart_id)
+    print(f"Contents: {contents}")
     return jsonify(contents)
+
 
 # DB access functions
 
@@ -112,40 +115,48 @@ def finalize_purchase(cart_id):
     conn.close()
 
 def get_cart_contents(cart_id):
+    print()
+    print(f"Received cart_id: {cart_id}")
 
     # Connect to the database
     conn = db.engine.raw_connection()
-    cur = conn.cursor()
+    cur = conn.cursor(cursor_factory=RealDictCursor)
     logger.debug('db connected')
+    print(f"Executing query with cart_id: {cart_id}")
 
     cur.execute(
         """
         SELECT
             scp.cart_id,
-            p.id AS product_id,
+            scp.product_id,
+            scp.quantity,
+            p.id,
             p.productName,
             p.productDetails,
             p.productSalesPrice,
-            scp.quantity,
+            p.productDiscount,
             (p.productSalesPrice * scp.quantity) AS total_price,
             (p.productDiscount * scp.quantity) AS total_discount,
             ((p.productSalesPrice * scp.quantity) * 0.25) AS total_vat -- Assuming 25% VAT
         FROM
-            ShoppingCartProduct scp
+            MStore_v1.ShoppingCartProduct scp
         JOIN
-            Product p ON scp.product_id = p.id
+            MStore_v1.Product p ON scp.product_id = p.id
         WHERE
             scp.cart_id = %s
-        """, (cart_id,))
+        """, (cart_id,)
+    )
 
     contents = cur.fetchall()
+    print(f"shoppingcart.get_cart_contents: Query results: {contents}")
 
     cur.close()
     conn.close()
 
-    if contents is None:
-        flash('No shoppingcarts found for this customer !.', 'danger')
-        logger.error('No shoppingcarts found for this customer.')
+    if not contents:
+        flash('No shopping carts found for this customer!', 'danger')
+        logger.error('No shopping carts found for this customer.')
         return render_template("customer_shopping_carts.html")
 
-    return contents
+    #return contents
+    return jsonify(contents)

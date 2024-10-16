@@ -15,17 +15,11 @@
             <a class="navbar-brand" href="#">Music Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Store menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}">Register customer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart_header.shoppingcart_header_list')}}"> Shoppingcarts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart_header.shoppingcart_lists', cart_id=cart_id) }}"> Shoppingcarts</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer
                     dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Manager dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout
+                    </a></li>
                 </ul>
             </div>
         </nav>

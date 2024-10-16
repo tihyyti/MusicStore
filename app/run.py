@@ -4,8 +4,12 @@ from __init__ import create_app, db
 
 app = create_app()
 
+#if __name__ == '__main__':
+    #app.run(debug=True)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, ssl_context=('certs/cert.pem', 'certs/key.pem'))
+
 
 
 

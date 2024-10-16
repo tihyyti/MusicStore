@@ -92,13 +92,15 @@ def login_customer():
 def view_cart(cart_id):
     # Fetch the shopping cart details from the database using cart_id
     cart = get_cart_by_id(cart_id)  # Replace with your actual database query
-    return render_template('view_cart.html', cart=cart)
+    print()
+    print(cart)
+    print()
+    return render_template('customer_shopping_carts.html')
 
 def get_cart_by_id(cart_id):
-    # Example function to fetch cart details from the database
-    # Replace with your actual database query logic
-    return {
-        'id': cart_id,
+    #return shoppingcart.get_cart_contents(cart_id)
+    #Example function to fetch cart details from the database
+    return { 'id': cart_id,
         'items': [
             {'product_id': 1, 'product_name': 'Product 1', 'quantity': 2, 'price': 10.0},
             {'product_id': 2, 'product_name': 'Product 2', 'quantity': 1, 'price': 20.0},
@@ -126,14 +128,14 @@ def shoppingcarts():
                  return render_template('customer_shopping_carts.html', shopping_carts=customerCarts)
             else:
                  flash('No shoppincarts found.', 'danger')
-                 return redirect(url_for('customer.dashboard'))
+                 return redirect(url_for('customer.customer_dashboard'))
 
         else:
             logger.error(f'Error during fetching customer data: {e}')
             flash('Customer session not found. Please select new function from main menu.', 'danger')
             cur.close()
             conn.close()
-            return redirect(url_for('mainmenu.mainmenu'))
+            return redirect(url_for('customer_mainmenu.customer_mainmenu'))
 
     except Exception as e:
         logger.error(f'Error during fetching customer data: {e}')
@@ -145,7 +147,7 @@ def shoppingcarts():
         cur.close()
         conn.close()
         render_template('customer_dashboard.html')
-    return redirect(url_for('mainmenu.mainmenu'))
+    return redirect(url_for('customer_mainmenu.customer_mainmenu'))
 
 @customer_bp.route('/basic_listing/<listing_name>')
 def basic_listing(listing_name):
@@ -168,7 +170,7 @@ def logout_customer():
     if 'customer_id' in session:
         session.pop('customer_id', None)
         flash('You have been logged out.', 'success')
-        return redirect(url_for('mainmenu.mainmenu'))
+        return redirect(url_for('customer_mainmenu.customer_mainmenu'))
     else:
         flash('You need to log in first.', 'danger')
         return redirect(url_for('customer.login_customer'))
@@ -226,12 +228,12 @@ def customer_dashboard():
         else:
             logger.error(f'Error during fetching customer data: {e}')
             flash('Customer data not found. Please select function.', 'danger')
-            redirect(url_for("mainmenu.mainmenu"))
+            redirect(url_for("customer_mainmenu.customer_mainmenu"))
 
     except Exception as e:
         logger.error(f'Error during fetching customer data: {e}')
         flash('An error occurred. Please select function from main menu.', 'danger')
-        return redirect(url_for("mainmenu.mainmenu"))
+        return redirect(url_for("customer_mainmenu.customer_mainmenu"))
 
     finally:
         if cur:
@@ -239,4 +241,4 @@ def customer_dashboard():
         if conn:
            conn.close()
 
-    return redirect(url_for("mainmenu.mainmenu"))
+    return redirect(url_for("customer_mainmenu.customer_mainmenu"))

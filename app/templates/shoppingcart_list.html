@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}List Carts{% endblock %}
+
+{% block content %}
+<h1>Shopping Carts</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Store ID</th>
+            <th>Customer ID</th>
+            <th>Status</th>
+            <th>VAT</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Edited Time</th>
+            <th>Purchased Time</th>
+            <th>Delivery Time</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cart in carts %}
+        <tr>
+            <td>{{ cart.id }}</td>
+            <td>{{ cart.cartstore_id }}</td>
+            <td>{{ cart.cartcustomer_id }}</td>
+            <td>{{ cart.cartstatus }}</td>
+            <td>{{ cart.cartvat }}</td>
+            <td>{{ cart.cartdiscount }}</td>
+            <td>{{ cart.carttotal }}</td>
+            <td>{{ cart.carteditedtime | datetime }}</td>
+            <td>{{ cart.cartpurchasedtime | datetime }}</td>
+            <td>{{ cart.cartdeliverytime | datetime }}</td>
+            <td>
+                <!-- <form action="{{ url_for('shoppingcart_header.shoppingcart_header_delete', id=cart.id) }}" method="post" style="display:inline;"> -->
+                <!-- <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"> -->
+                <!-- <button type="submit" class="btn btn-danger btn-sm">Delete</button> -->
+                <!-- </form> -->
+                 <a href="{{ url_for('shoppingcart.cart_contents', cart_id=cart.id) }}" class="btn btn-info btn-sm">View Contents</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

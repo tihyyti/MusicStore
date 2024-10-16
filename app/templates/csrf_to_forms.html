@@ -1,0 +1,5 @@
+<form action="{{ url_for('shoppingcart_header.shoppingcart_header_create') }}" method="post">
+    {{ csrf_token() }}
+    <!-- form fields here -->
+    <button type="submit" class="btn btn-primary">Create Cart</button>
+</form>
