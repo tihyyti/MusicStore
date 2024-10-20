@@ -15,7 +15,7 @@ Final release of MusicStore for TSOHA_2024 P1
 8.Installation and configuration guides for Linux and Windows environment separately done.
 9. User Stories document with reporting db-view-scripts done and enclosed as .pdf.
 10. gitignore done.
-
+Note: Remember that the system uses self signed certificate, this means that your browser alerts you, just accept to continue with risk, its safe.
 
 Added 2024_10_06: Commit: Customer and Store Manager registrations, logins and logouts, small Customer and Store Manager Dashboards, security improvements: SQLi XXS, CSRF, .env/secret config, input-forms validations, new db tables normalized joinin table for shoppingcart and products, Product table foreig keys reduced essentially.
 
