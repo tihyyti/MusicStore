@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Shopping Cart</h2>
+<form method="post" action="{{ url_for('shoppingcart.finalize_purchase_route') }}">
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Details</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Discount</th>
+                <th>VAT</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart_contents %}
+            <tr>
+                <td>{{ item[4] }}</td>
+                <td>{{ item[5] }}</td>
+                <td>{{ item[6] }}</td>
+                <td>{{ item[2] }}</td>
+                <td>{{ item[8] }}</td>
+                <td>{{ item[9] }}</td>
+                <td>{{ item[10] }}</td>
+                <td>
+                    <button type="button" onclick="updateCart({{ item[0] }}, {{ item[1] }}, {{ item[2] }})">Update</button>
+                    <button type="button" onclick="deleteFromCart({{ item[0] }}, {{ item[1] }})">Delete</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button type="submit">Finalize Purchase</button>
+</form>
+{% endblock %}
+<script>
+    function updateCart(cartId, productId, quantity) {
+    fetch('/update-cart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': document.querySelector('input[name="csrf_token"]').value
+        },
+        body: JSON.stringify({ cart_id: cartId, product_id: productId, quantity: quantity })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+        location.reload();
+    });
+}
+
+function deleteFromCart(cartId, productId) {
+    fetch('/delete-from-cart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': document.querySelector('input[name="csrf_token"]').value
+        },
+        body: JSON.stringify({ cart_id: cartId, product_id: productId })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+        location.reload();
+    });
+}
+</script>
+

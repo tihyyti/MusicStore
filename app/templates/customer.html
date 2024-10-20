@@ -11,9 +11,9 @@
 </head>
 <body>
     <header>
-        <h5>* Customer registration *</h5>
+        <h4>* Customer registration *</h4>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 < class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_mainmenu.customer_mainmenu') }}">Customer menu</a></li>
@@ -24,7 +24,7 @@
         </nav>
     </header>
     <div class="container">
-        <h3>Customer Registration</h3>
+        <h4>Customer Registration</h4>
         <form method="POST" action="{{ url_for('register_customer.register_customer') }}">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div class="form-group">

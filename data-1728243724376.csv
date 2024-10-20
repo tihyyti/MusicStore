@@ -1,8 +1,0 @@
-"id","storemanagername","storename","storetaxid","storephone","storeemail","storeaddress","storelogourl","storemanager_id","last_login","storemanagerpassw"
-16,"Pekka","Musa","T1234","0401234","pekka@gmail.com","Espoo","",2,"2024-10-06","$2b$12$gcosK/7RvsFdk.H/7vcc4eL4uR0z.3/MEVE.HqfKQwjJqxvrVGXVS"
-21,"Paavo","Musiikkikauppa","T 9876543","04056777444","paav0@gmail.com","Turku","",33,"2024-10-06","$2b$12$1nyW6FRc7Bn.M.t4wwSaXuqZJd8KglJOym36Cg./9bzzkU42ADhqa"
-14,"Teppo","Modern Music","T 123456","040-123456","tepp0@gmail.com","Pori","",1,"2024-09-26","$2b$12$7ijGzF7Mrsza1AeDWPqJLuEKoaSE.7L3.hrYdaNTK7vtVenQIRKZ."
-1,"John Doe","Vintage Instruments Store","TAX1234567890","123-456-7890","vintage@store.com","123 Vintage St, Music City","http://example.com/logo1.png",1,"2024-01-01","password123"
-2,"Jane Smith","Modern Instruments Store","TAX0987654321","098-765-4321","modern@store.com","456 Modern Ave, Music City","http://example.com/logo2.png",2,"2024-01-02","password456"
-17,"Jouni Jukola","Jounin musakauppa","T 23456","+40 5467890","jukola@passw","Ylläs","",2,"2024-09-28","$2b$12$l7aWenqH5ssDwZxnTSFvOuIc3HAk7BB7TCIxK7Xdt5FoXJHLe1vVS"
-20,"Niilo","Musiikkikauppa","T 14321","04067890","Niilo@gmail.com","Tampere","",1,"2024-09-30","$2b$12$1UmfIs4XH39FaKuGFaQvROS8NvV0Qvge8JNShGQdpMCP6Zm33xkTS"

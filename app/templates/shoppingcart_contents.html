@@ -1,15 +1,11 @@
-
 {% extends "base.html" %}
 
-{% block title %}View shoppingcart{% endblock %}
+{% block title %}View Shopping Cart{% endblock %}
 
 {% block content %}
-
-<!-- HTML Table for ShoppingCart Contents -->
-
-<div id="cartContents" style="display: none;">
-    <h3>Shopping Cart Contents</h3>
-    <table id="cartContentsTable">
+<div id="cartContents">
+    <h4>Shopping Cart Contents</h4>
+    <table id="cartContentsTable" class="table table-striped">
         <thead>
             <tr>
                 <th>Product ID</th>
@@ -20,91 +16,16 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Rows will be populated dynamically -->
+            {% for item in cart_contents %}
+            <tr>
+                <td>{{ item[1] }}</td> <!-- scp.product_id -->
+                <td>{{ item[4] }}</td> <!-- p.productName -->
+                <td>{{ item[5] }}</td> <!-- p.productDetails -->
+                <td>{{ item[6] }}</td> <!-- p.productSalesPrice -->
+                <td>{{ item[2] }}</td> <!-- scp.quantity -->
+            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </div>
 {% endblock %}
-
-<script>
-    // Function to fetch and display cart contents with CSRF protection
-    function showCartContents(id) {
-        const csrfToken = getCsrfToken(); // Function to get CSRF token
-
-        fetch(`/cart-contents/${id}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'CSRF-Token': csrfToken // Include CSRF token in headers
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            const tableBody = document.getElementById('cartContentsTable').getElementsByTagName('tbody')[0];
-            tableBody.innerHTML = ''; // Clear previous contents
-            data.forEach(item => {
-                const row = tableBody.insertRow();
-                row.innerHTML = `
-                    <td>${item.id}</td>
-                    <td>${item.productName}</td>
-                    <td>${item.productDetails}</td>
-                    <td>${item.productSalesPrice}</td>
-                    <td>${item.quantity}</td>
-                `;
-            });
-            document.getElementById('cartContents').style.display = 'block';
-        });
-    }
-
-    // Example function to handle cart selection (replace with actual implementation)
-    function handleCartSelection(id) {
-        showCartContents(id);
-    }
-
-    // Function to get CSRF token (implementation depends on your backend)
-    function getCsrfToken() {
-        // Example implementation, replace with actual method to get CSRF token
-        return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-    }
-
-    // Function to fetch and display cart contents with CSRF protection
-    function showCartContents(id) {
-        const csrfToken = getCsrfToken(); // Function to get CSRF token
-
-        fetch(`/cart-contents/${id}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'CSRF-Token': csrfToken // Include CSRF token in headers
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            const tableBody = document.getElementById('cartContentsTable').getElementsByTagName('tbody')[0];
-            tableBody.innerHTML = ''; // Clear previous contents
-            data.forEach(item => {
-                const row = tableBody.insertRow();
-                row.innerHTML = `
-                    <td>${item.id}</td>
-                    <td>${item.productName}</td>
-                    <td>${item.productDetails}</td>
-                    <td>${item.productSalesPrice}</td>
-                    <td>${item.quantity}</td>
-                `;
-            });
-            document.getElementById('cartContents').style.display = 'block';
-        });
-    }
-
-    // Example function to handle cart selection (replace with actual implementation)
-    function handleCartSelection(Id) {
-        showCartContents(id);
-    }
-
-    // Function to get CSRF token (implementation depends on your backend)
-    function getCsrfToken() {
-        // Example implementation, replace with actual method to get CSRF token
-        return document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-    }
-
-</script>

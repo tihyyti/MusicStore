@@ -3,14 +3,12 @@
 {% block title %}Create Cart{% endblock %}
 
 {% block content %}
-<h1>Create a New Cart</h1>
-<form method="post" action="{{ url_for('shoppingcart_header.shoppingcart_header_create') }}">
+<h4>Create a New Cart</h4>
+<form method="post" action="{{ url_for
+    ('shoppingcart_header.shoppingcart_header_create') }}">
     <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
     <div class="form-group">
         {{ form.cartstore_id.label }} {{ form.cartstore_id(class="form-control") }}
-    </div>
-    <div class="form-group">
-        {{ form.cartcustomer_id.label }} {{ form.cartcustomer_id(class="form-control") }}
     </div>
     <div class="form-group">
         {{ form.cartstatus.label }} {{ form.cartstatus(class="form-control") }}
@@ -23,9 +21,6 @@
     </div>
     <div class="form-group">
         {{ form.carttotal.label }} {{ form.carttotal(class="form-control") }}
-    </div>
-    <div class="form-group">
-        {{ form.cartcurrenttime.label }} {{ form.cartcurrenttime(class="form-control") }}
     </div>
     <div class="form-group">
         {{ form.carteditedtime.label }} {{ form.carteditedtime(class="form-control") }}

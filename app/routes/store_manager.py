@@ -5,9 +5,33 @@ import re # regular expressions
 import bleach # sanitization
 from flask_wtf.csrf import CSRFProtect
 from datetime import datetime
-from __init__ import db, logger
+from __init__ import db, logger, check_manager_logged_in, check_customer_logged_in
 
 store_manager_bp = Blueprint('store_manager', __name__)
+
+# Define functions for each report type
+def sales_per_product_group():
+    return "Sales per Product Group Report"
+def campaign_sales():
+    return "Campaign Sales Report"
+def sales_per_product():
+    return "Sales per Product Report"
+def customer_shopping_carts():
+    return "Customer Shopping Carts Report"
+def customer():
+    return "Customer Report"
+def productgroup():
+    return "Product Group Report"
+def product():
+    return "Product Report"
+def shoppingcart():
+    return "Shopping Cart Report"
+def store():
+    return "Store Report"
+def productimage():
+    return "Product Image Report"
+def shoppingcartproduct():
+    return "Shopping Cart Product Report"
 
 # Validation functions
 def validate_name(name):
@@ -45,12 +69,13 @@ def login_manager():
             if storemanager:
                 manager_id, stored_passw = storemanager  # tuple unpacking
                 if storeManagerStatus and bcrypt.checkpw(storeManagerPassw.encode('utf-8'), stored_passw.encode('utf-8')):
-                    session['manager_id'] = manager_id
+
                     cur.execute(
                         "UPDATE mstore_v1.Store SET last_login = %s WHERE id = %s",
                         (datetime.now(), manager_id),
                     )
                     conn.commit()
+                    session['manager_id'] = manager_id
                     flash('Login successful!', 'success')
                     return redirect(url_for('mainmenu.mainmenu'))
                 else:
@@ -69,7 +94,7 @@ def login_manager():
 
         except Exception as e:
             logger.error(f'Error during login: {e}')
-            flash('An error occurred. Please try again.', 'danger')
+            flash('An error occurred. Please select a function from the main menu.', 'danger')
             return redirect(url_for("mainmenu.mainmenu"))
 
         finally:
@@ -82,94 +107,147 @@ def login_manager():
 
 @store_manager_bp.route('/manager_dashboard')
 def manager_dashboard():
-    conn = db.engine.raw_connection()
-    cur = conn.cursor()
 
-    try:
-        total_sales = 0.0
-        total_discount = 0.0
-        total_vat = 0.0
+    manager_id = check_manager_logged_in()
+    if isinstance(manager_id, int):
 
-        customer_id = session.get('storemanager_id')
+        conn = db.engine.raw_connection()
+        cur = conn.cursor()
 
-        if customer_id:
-            cur.execute("SELECT id, custoName FROM mstore_v1.customer WHERE id = %s", (customer_id,))
-            customer = cur.fetchone()
+        try:
 
-            if customer:
-                customer_id, customer_name = customer
-                print(f"Customer ID: {customer_id}, Customer Name: {customer_name}")
+            total_sales = 0.0
+            total_discount = 0.0
+            total_vat = 0.0
+            id = 16
 
-                # Fetch aggregated KPIs per customer
-                cur.execute('''
-                    SELECT
-                        SUM(carttotal) AS total_sales,
-                        SUM(cartdiscount) AS total_discount,
-                        SUM(cartvat) AS total_vat
-                    FROM mstore_v1.ShoppingCart
-                    WHERE cartCustomer_id = %s
-                ''', (customer_id,))
+            cur.execute("""
+                SELECT id, storemanagername, storename, storemanager_id
+                FROM mstore_v1.store WHERE id = %s""",(id,))
 
-                kpis = cur.fetchone()
+            store = cur.fetchone()
 
-                total_sales = kpis[0] if kpis[0] is not None else 0
-                total_discount = kpis[1] if kpis[1] is not None else 0
-                total_vat = kpis[2] if kpis[2] is not None else 0
+            if store:
+                storemanager_name = store[1]
+                store_name = store[2]
+                storemanager_id = store[3]
+                print(f"ID: {storemanager_id}, Manager: {storemanager_name}, Store: {store_name}")
 
-                print(customer_id, customer_name)
-                print(f"Total Sales: {total_sales}")
-                print(f"Total Discount: {total_discount}")
-                print(f"Total VAT: {total_vat}")
-
-                return render_template('manager_dashboard.html', custo_id=customer_id, custo_name=customer_name,
-                                       sales=total_sales, discount=total_discount, vat=total_vat)
+                return render_template('manager_dashboard.html', manager_id=storemanager_id,    manager_name=storemanager_name, store_name=store_name)
             else:
-                flash('Customer not found.', 'danger')
+                flash('Manager account not found.', 'danger')
                 return redirect(url_for('mainmenu.mainmenu'))
+
+        except Exception as e:
+            logger.error(f'Error during fetching manager-customer data: {e}')
+            flash('An error occurred. Please select a function from the main menu.', 'danger')
+            return redirect(url_for("mainmenu.mainmenu"))
+
+        finally:
+            if cur:
+                cur.close()
+            if conn:
+                conn.close()
+    return redirect(url_for("mainmenu.mainmenu"))
+
+@store_manager_bp.route('/report/<report_name>')
+def report(report_name):
+
+        manager_id = check_manager_logged_in()
+        if isinstance(manager_id, int):
+
+            # Define case structures
+            report = {}
+            report = {
+                'sales_per_product_group': 'productgroup',
+                'campaign_sales': 'product',
+                'sales_per_product': 'product'
+                }
+
+            # Determine which case structure to use
+            handler = report.get(report_name)
+            if handler:
+                sql_view_name = handler
+            else:
+                flash('Invalid report name.', 'danger')
+                redirect(url_for('mainmenu.mainmenu'))
+
+            conn = db.engine.raw_connection()
+            cur = conn.cursor()
+
+            sql_view = f'mstore_v1.{sql_view_name}'
+            print({sql_view})
+
+            # Execute a query to get the table column names
+            query = f"SELECT * FROM {sql_view} LIMIT 0"
+            cur.execute(query)
+            column_names = [description[0] for description in cur.description]
+            # Print the column names
+            print(column_names)
+
+            query = f"SELECT * FROM {sql_view}"
+            cur.execute(query)
+
+            report_data = cur.fetchall()
+
+            if cur:
+                cur.close()
+            if conn:
+                conn.close()
+
+            return render_template('report.html', report_name=sql_view_name, report_data=report_data, column_names=column_names)
+
+@store_manager_bp.route('/listing/<listing_name>')
+def listing(listing_name):
+
+    manager_id = check_manager_logged_in()
+    if isinstance(manager_id, int):
+
+    # Define case structures
+        listing = {}
+        listing = {
+            'shoppingcart': 'shoppingcart',
+            'customer': 'customer',
+            'productgroup': 'productgroup',
+            'product': 'product',
+            'store': 'store',
+            'productimage': 'productimage',
+            'shoppingcartproduct': 'shoppingcartproduct'
+        }
+
+        # Determine which case structure to use
+        handler = listing.get(listing_name)
+
+        if handler:
+            sql_table_name = handler
         else:
-            flash('You need to log in first.', 'danger')
-            return redirect(url_for('store_manager.login_manager'))
+            flash('Invalid listing name.', 'danger')
+            redirect(url_for('mainmenu.mainmenu'))
 
-    except Exception as e:
-        logger.error(f'Error during fetching manager data: {e}')
-        flash('An error occurred. Please select function from main menu.', 'danger')
-        return redirect(url_for("mainmenu.mainmenu"))
+        conn = db.engine.raw_connection()
+        cur = conn.cursor()
 
-    finally:
+        sql_table = f'mstore_v1.{sql_table_name}'
+
+        # Execute a query to get the table column names
+        query = f"SELECT * FROM {sql_table} LIMIT 0"
+        cur.execute(query)
+
+        column_names = [description[0] for description in cur.description]
+        # Print the column names
+        print(column_names)
+
+        query = f"SELECT * FROM {sql_table}"
+        cur.execute(query)
+
+        report_data = cur.fetchall()
+
         if cur:
             cur.close()
         if conn:
             conn.close()
 
-@store_manager_bp.route('/report/<report_name>')
-def report(report_name):
-    if 'manager_id' in session:
-        conn = db.engine.raw_connection()
-        cur = conn.cursor()
-        query = f"SELECT * FROM {report_name}"
-        cur.execute(query)
-        report_data = cur.fetchall()
-        cur.close()
-        conn.close()
-        return render_template('report.html', report_name=report_name, report_data=report_data)
-    else:
-        flash('You need to log in first.', 'danger')
-        return redirect(url_for('store_manager.login_manager'))
-
-@store_manager_bp.route('/basic_listing/<listing_name>')
-def basic_listing(listing_name):
-    if 'manager_id' in session:
-        conn = db.engine.raw_connection()
-        cur = conn.cursor()
-        query = f"SELECT * FROM {listing_name}"
-        cur.execute(query)
-        listing_data = cur.fetchall()
-        cur.close()
-        conn.close()
-        return render_template('basic_listing.html', listing_name=listing_name, listing_data=listing_data)
-    else:
-        flash('You need to log in first.', 'danger')
-        return redirect(url_for('store_manager.login_manager'))
+        return render_template('report.html', report_name=sql_table_name, report_data=report_data, column_names=column_names)
 
 @store_manager_bp.route('/logout_manager')
 def logout_manager():

@@ -13,6 +13,7 @@ venv/
 .env
 
 # server security
+config
 certs/
 
 # VS Code
@@ -26,3 +27,6 @@ certs/
 
 # Temporary files
 *.tmp
+
+# Ignore .rtf files
+*.rtf

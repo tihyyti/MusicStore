@@ -11,14 +11,12 @@
 </head>
 <body>
     <header>
-        <h5>* View shopping carts *</h5>
+        <h4>* View shopping carts *</h4>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer_mainmenu.customer_mainmenu') }}">Customer menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}
-                    ">Logout</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
                 </ul>
             </div>
@@ -30,7 +28,7 @@
         <p></p>
     </header>
     <main class="container mt-4">
-        <h3>Customer Shopping Carts</h3>
+        <h4>Customer Shopping Carts</h4>
         <table class="table table-striped" id="shoppingCartsTable">
             <thead>
                 <tr>
@@ -41,7 +39,6 @@
                     <th>Edited Time</th>
                     <th>Purchased Time</th>
                     <th>Delivery Time</th>
-                    <th>Cart Category</th>
                 </tr>
             </thead>
             <tbody>
@@ -57,7 +54,6 @@
                     <td>{{ cart.edited_time }}</td>
                     <td>{{ cart.purchased_time }}</td>
                     <td>{{ cart.delivery_time }}</td>
-                    <td>{{ cart.cart_category }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

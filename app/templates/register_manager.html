@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-        <h5>* Store manager registration *</h5>
+        <h4>* Store manager registration *</h4>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Store menu</a></li>
@@ -34,7 +34,7 @@
         <p></p>
     </header>
     <div class="container">
-        <h3>Store Manager Registration</h3>
+        <h4>Store Manager Registration</h4>
         <form method="POST" action="{{ url_for('register_manager.register_manager') }}">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div class="form-group">

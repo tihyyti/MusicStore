@@ -7,6 +7,8 @@ import bleach # sanitization
 from flask_wtf.csrf import CSRFProtect
 from datetime import datetime
 from __init__ import db, logger
+import routes.shoppingcart as shoppingcart
+
 
 customer_bp = Blueprint('customer', __name__)
 
@@ -59,7 +61,7 @@ def login_customer():
                     session['customer_id'] = customer_id
                     logger.debug(f"Customer ID {customer_id} set in session.")
                     flash('Login successful!', 'success')
-                    return redirect(url_for('customer.customer_dashboard'))
+                    return redirect(url_for('customer_navbar.customer_navbar'))
 
                 else:
                     # Check validations
@@ -88,118 +90,137 @@ def login_customer():
     return render_template('login_customer.html')
 
 
-@customer_bp.route('/customer/view_cart/<int:cart_id>')
-def view_cart(cart_id):
-    # Fetch the shopping cart details from the database using cart_id
-    cart = get_cart_by_id(cart_id)  # Replace with your actual database query
-    print()
-    print(cart)
-    print()
-    return render_template('customer_shopping_carts.html')
+@customer_bp.route('/view-cart')
+def view_cart():
 
-def get_cart_by_id(cart_id):
-    #return shoppingcart.get_cart_contents(cart_id)
-    #Example function to fetch cart details from the database
-    return { 'id': cart_id,
-        'items': [
-            {'product_id': 1, 'product_name': 'Product 1', 'quantity': 2, 'price': 10.0},
-            {'product_id': 2, 'product_name': 'Product 2', 'quantity': 1, 'price': 20.0},
-        ],
-        'total_price': 40.0,
-        'total_discount': 5.0,
-        'total_vat': 3.0
-    }
+    customer_id = session.get('customer_id')
+    if 'customer_id' in session:
+        logger.debug(f"customer ID {customer_id} in current session.")
+    else:
+        flash('You need to log in first.', 'danger')
+        return redirect(url_for('customer.login_customer'))
+
+    # Fetch the shopping cart item details
+    cartcustomer_id = int(customer_id)
+    shoppingcarts = []
+    shoppingcarts = shoppingcart.cart_contents()
+    print()
+    print(f"view_cart/Fetched shopping carts: {shoppingcart}")
+    print()
+
+    conn = None
+    cur = None
+    conn = db.engine.raw_connection()
+    cur = conn.cursor()
+    logger.debug('db connected')
+
+    cur.execute("SELECT * FROM mstore_v1.customer WHERE id = %s", (cartcustomer_id,))
+
+    customer = cur.fetchone()
+    if customer:
+        customer_id = int(customer[0])
+        customer_name = customer[2]
+        customer_email = customer[3]
+        print(f"Customer ID: {customer_id}, Name: {customer_name}, email: {customer_email}")
+        # Fetch item sums per shoppingcart
+        cur.execute('''
+            SELECT
+                carttotal AS total_sales,
+                cartdiscount AS total_discount,
+                cartvat AS total_vat
+            FROM mstore_v1.Shoppingcart
+            WHERE cartcustomer_id = %s
+        ''', (cartcustomer_id,))
+
+        # Fetch cartcustomer cart totals
+        cart_totals = cur.fetchone()
+        # Extract the cart_totals
+        total_sales = cart_totals[0] if cart_totals[0] is not None else 0
+        total_discount = cart_totals[1] if cart_totals[1] is not None else 0
+        total_vat = cart_totals[2] if cart_totals[2] is not None else 0
+
+        # Print or use the cart_totals as needed (for testing)
+        print(f"Total Sales: {total_sales}")
+        print(f"Total Discount: {total_discount}")
+        print(f"Total VAT: {total_vat}")
+
+        return render_template('customer_dashboard.html', custo_id=customer_id,
+        custo_name=customer_name, custo_email=customer_email, sales=total_sales,
+        discount=total_discount, vat=total_vat)
+    else:
+        logger.error(f'Error during fetching customer data: {e}')
+        flash('Customer data not found. Please select function.', 'danger')
+        redirect(url_for("customer_navbar.customer_navbar"))
+
+    return render_template('customer_shopping_carts.html', shopping_carts=shoppingcarts)
 
 @customer_bp.route("/shoppingcarts")
-def shoppingcarts():
+def list_shoppingcarts():
     try:
+        customer_id = session.get('customer_id')
         if 'customer_id' in session:
-            customer_id = session['customer_id']
-            conn = db.engine.raw_connection()
-            cur = conn.cursor()
-
-            cur.execute("""
-                SELECT * FROM mstore_v1.ShoppingCart WHERE cartCustomer_id = %s""", (customer_id,))
-            customerCarts = cur.fetchall()
-
-            if customerCarts:
-                 cur.close()
-                 conn.close()
-                 return render_template('customer_shopping_carts.html', shopping_carts=customerCarts)
-            else:
-                 flash('No shoppincarts found.', 'danger')
-                 return redirect(url_for('customer.customer_dashboard'))
-
+            logger.debug(f"customer ID {customer_id} in current session.")
         else:
-            logger.error(f'Error during fetching customer data: {e}')
-            flash('Customer session not found. Please select new function from main menu.', 'danger')
-            cur.close()
-            conn.close()
-            return redirect(url_for('customer_mainmenu.customer_mainmenu'))
+            flash('You need to log in first.', 'danger')
+            return redirect(url_for('customer.login_customer'))
+
+        cartcustomer_id = int(customer_id)
+        conn = db.engine.raw_connection()
+        cur = conn.cursor()
+
+        cur.execute("""
+            SELECT * FROM mstore_v1.Shoppingcart WHERE cartcustomer_id = %s""", (cartcustomer_id,))
+
+        customerCarts = cur.fetchall()
+
+        if customerCarts:
+            return render_template('customer_shopping_carts.html', shopping_carts=customerCarts)
+        else:
+            flash('No shoppincarts found.', 'danger')
+            return redirect(url_for('customer_navbar.customer_navbar'))
 
     except Exception as e:
         logger.error(f'Error during fetching customer data: {e}')
         flash('An error occurred. Please select function from main menu.', 'danger')
-        cur.close()
-        conn.close()
 
     finally:
-        cur.close()
-        conn.close()
-        render_template('customer_dashboard.html')
-    return redirect(url_for('customer_mainmenu.customer_mainmenu'))
 
-@customer_bp.route('/basic_listing/<listing_name>')
-def basic_listing(listing_name):
-    if 'customer_id' in session:
-        conn = db.engine.raw_connection()
-        cur = conn.cursor()
-        query = f"SELECT * FROM {listing_name}"
-        cur.execute(query)
-        listing_data = cur.fetchall()
-        cur.close()
-        conn.close()
-        return render_template('basic_listing.html', listing_name=listing_name,
-listing_data=listing_data)
-    else:
-        flash('You need to log in first.', 'danger')
-        return redirect(url_for('customer.login_customer'))
+        if cur:
+            cur.close()
+        if conn:
+            conn.close()
 
-@customer_bp.route('/logout_customer')
-def logout_customer():
-    if 'customer_id' in session:
-        session.pop('customer_id', None)
-        flash('You have been logged out.', 'success')
-        return redirect(url_for('customer_mainmenu.customer_mainmenu'))
-    else:
-        flash('You need to log in first.', 'danger')
-        return redirect(url_for('customer.login_customer'))
+    return redirect(url_for('customer_navbar.customer_navbar'))
 
 @customer_bp.route('/customer_dashboard')
 def customer_dashboard():
+
+    customer_id = session.get('customer_id')
     if 'customer_id' in session:
-        customer_id = session.get('customer_id')
-
-        sales = 0.0
-        discount = 0.0
-        vat = 0.0
-
+       logger.debug(f"customer ID {customer_id} in current session.")
     else:
-        flash('You need to log in first.', 'danger')
-        return redirect(url_for('customer.login_customer'))
+       flash('You need to log in first.', 'danger')
+       return redirect(url_for('customer.login_customer'))
+
+    customer_id = int(customer_id)
+    sales = 0.0
+    discount = 0.0
+    vat = 0.0
 
     conn = db.engine.raw_connection()
     cur = conn.cursor()
+
     try:
         cur.execute("SELECT * FROM mstore_v1.customer WHERE id = %s", (customer_id,))
 
         customer = cur.fetchone()
 
         if customer:
-            customer_id = customer[0]
+            customer_id = int(customer[0])
             customer_name = customer[2]
+            customer_email = customer[3]
 
-            print(f"Customer ID: {customer_id}, Customer Name: {customer_name}")
+            print(f"Customer ID: {customer_id}, Name: {customer_name}, email: {customer_email}")
 
             # Fetch aggregated KPIs per customer
             cur.execute('''
@@ -220,11 +241,10 @@ def customer_dashboard():
             total_vat = kpis[2] if kpis[2] is not None else 0
 
             # Print or use the KPIs as needed (for testing)
-            print(customer_id)
             print(f"Total Sales: {total_sales}")
             print(f"Total Discount: {total_discount}")
             print(f"Total VAT: {total_vat}")
-            return render_template('customer_dashboard.html', custo_id=customer_id, custo_name=customer_name, sales=total_sales, discount=total_discount, vat=total_vat)
+            return render_template('customer_dashboard.html', custo_id=customer_id, custo_name=customer_name, custo_email=customer_email, sales=total_sales, discount=total_discount, vat=total_vat)
         else:
             logger.error(f'Error during fetching customer data: {e}')
             flash('Customer data not found. Please select function.', 'danger')
@@ -232,7 +252,7 @@ def customer_dashboard():
 
     except Exception as e:
         logger.error(f'Error during fetching customer data: {e}')
-        flash('An error occurred. Please select function from main menu.', 'danger')
+        flash('An error occurred. Please select function from customer main menu.', 'danger')
         return redirect(url_for("customer_mainmenu.customer_mainmenu"))
 
     finally:
@@ -241,4 +261,14 @@ def customer_dashboard():
         if conn:
            conn.close()
 
-    return redirect(url_for("customer_mainmenu.customer_mainmenu"))
+    return redirect(url_for("shoppingcart_header.shoppingcart_header_list"))
+
+@customer_bp.route('/logout_customer')
+def logout_customer():
+    if 'customer_id' in session:
+        session.pop('customer_id', None)
+        flash('You have been logged out.', 'success')
+        return redirect(url_for('mainmenu.mainmenu'))
+    else:
+        flash('You need to log in first.', 'danger')
+        return redirect(url_for('customer.login_customer'))

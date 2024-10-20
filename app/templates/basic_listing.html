@@ -11,23 +11,19 @@
 </head>
 <body>
     <header>
-        <h5>* Basic listings *</h5>
+        <h4>* Basic listings *</h4>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}
                     ">Register customer</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart_header.shoppingcart_contents', cart_id=cart_id) }}">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.cart_contents') }}">
                     Shoppingcarts</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}
                     ">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url_for('store_manager.manager_reports') }}"
-                    >Sales reports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url_for('store_manager.manager_listings') }}"
-                    >Basic listings</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}"
                     >Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}"
@@ -42,11 +38,11 @@
         <p></p>
     </header>
     <main class="container mt-4">
-        <h3>{{ listing_name }}</h3>
+        <h4>{{ listing_name }}</h4>
         <table class="table table-striped" id="listingTable">
             <thead>
                 <tr>
-                    {% for column in listing_data[0].keys() %}
+                    {% for column in column_names %}
                     <th>{{ column }}</th>
                     {% endfor %}
                 </tr>
@@ -61,7 +57,7 @@
                 {% endfor %}
             </tbody>
         </table>
-        <a href="{{ url_for('manager_dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+        <a href="{{ url_for('store_manager.manager_dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
     </main>
     <footer class="text-center mt-4">
       <p>&copy; 2024 Music Store</p>

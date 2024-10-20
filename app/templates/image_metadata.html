@@ -17,9 +17,9 @@ rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <header>
-        <h5>* Image metadata *</h5>
+        <h4>* Image metadata *</h4>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Home</</li>
@@ -30,7 +30,7 @@ rel="stylesheet">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer dashboard</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}">Shopping Cart</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register_manager.register_manager') }}">Register manager</a></li>
-                    <li class="nav-item"><Login class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.login_manager') }}">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}">Logout</a></li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@ rel="stylesheet">
 {% extends "base.html" %}
 {% block title %}Image Metadata{% endblock %}
 {% block content %}
-    <h1>Image Metadata</h1>
+    <h4>Image Metadata</h4>
     <a href="{{ url_for('create_image') }}" class="btn btn-primary">Add New Image</a>
     <table class="table table-striped">
         <thead>

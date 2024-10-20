@@ -3,7 +3,7 @@
 {% block title %}List Carts{% endblock %}
 
 {% block content %}
-<h1>Shopping Carts</h1>
+<h4>Shopping Carts</h4>
 <table class="table">
     <thead>
         <tr>
@@ -34,11 +34,13 @@
             <td>{{ cart.cartpurchasedtime | datetime }}</td>
             <td>{{ cart.cartdeliverytime | datetime }}</td>
             <td>
-                <!-- <form action="{{ url_for('shoppingcart_header.shoppingcart_header_delete', id=cart.id) }}" method="post" style="display:inline;"> -->
-                <!-- <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"> -->
-                <!-- <button type="submit" class="btn btn-danger btn-sm">Delete</button> -->
-                <!-- </form> -->
-                 <a href="{{ url_for('shoppingcart.cart_contents', cart_id=cart.id) }}" class="btn btn-info btn-sm">View Contents</a>
+                <form action="{{ url_for
+                ('shoppingcart_header.shoppingcart_header_delete', id=cart.id) }}" method="post" style="display:inline;">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button type="submit" class="btn btn-danger btn-sm">Delete Cart</button>
+                </form>
+                <a href="{{ url_for('shoppingcart.cart_contents') }}" class="btn btn-info
+                btn-sm">View Contents</a>
             </td>
         </tr>
         {% endfor %}

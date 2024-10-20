@@ -10,29 +10,37 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
 <body>
-    <h5>* Reporting *</h5>
+    <h4>* Reporting *</h4>
     <header>
-        <h5>* Reporting *</h5>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('mainmenu.mainmenu') }}">Store menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('mainmenu.mainmenu') }}">Store menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('register_customer.register_customer') }}
                     ">Register customer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.login_customer') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout</a>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('customer.login_customer') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('customer.logout_customer') }}">Logout</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart_header.shoppingcart_list', cart_id=cart_id) }}">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart_header.shoppingcart_header_list') }}">
                     Shoppingcarts</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart.analyze')}}">Cart analyze</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.manager_dashboard') }}
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart.cart_contents')}}">Cart Contents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('store_manager.manager_dashboard') }}
                     ">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url_for('store_manager.manager_reports') }}"
+                    <li class="nav-item"><a class="nav-link" href="{{url_for
+                    ('store_manager.report', report_name=customer) }}"
                     >Sales reports</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{url_for('store_manager.manager_listings') }}"
+                    <li class="nav-item"><a class="nav-link" href="{{url_for
+                    ('store_manager.listing', listing_name=product) }}"
                     >Basic listings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('store_manager.logout_manager') }}"
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('store_manager.logout_manager') }}"
                     >Logout</a></li>
                 </ul>
             </div>
@@ -44,11 +52,11 @@
         <p></p>
     </header>
     <main class="container mt-4">
-        <h3>{{ report_name }}</h3>
+        <h4>{{ report_name }}</h4>
         <table class="table table-striped" id="reportTable">
             <thead>
                 <tr>
-                    {% for column in report_data[0].keys() %}
+                    {% for column in column_names %}
                     <th>{{ column }}</th>
                     {% endfor %}
                 </tr>
@@ -63,7 +71,7 @@
                 {% endfor %}
             </tbody>
         </table>
-        <a href="{{ url_for('manager_dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+        <a href="{{ url_for('store_manager.manager_dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
     </main>
     <footer class="text-center mt-4">
         <p>© 2024 Music Store</p>

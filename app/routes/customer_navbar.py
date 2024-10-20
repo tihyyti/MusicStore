@@ -3,10 +3,10 @@ from flask import Blueprint, render_template, flash
 from __init__ import db, logger
 import templates
 
-customer_mainmenu_bp = Blueprint('customer_mainmenu', __name__)
+customer_navbar_bp = Blueprint('customer_navbar', __name__)
 
-@customer_mainmenu_bp.route('/customer_mainmenu')
-def customer_mainmenu():
+@customer_navbar_bp.route('/customer_navbar')
+def customer_navbar():
 
     #flash('Select a function from the navigation menu.', 'success')
-    return render_template('customer_mainmenu.html')
+    return render_template('customer_navbar.html')

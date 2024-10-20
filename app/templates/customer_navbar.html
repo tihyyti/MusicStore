@@ -10,16 +10,28 @@
 </head>
 <body>
     <header>
-        <h5>  * WELCOME * Explore our wide range of music instruments and manage your shopping cart and account ! </h5>
+        <h4>  * WELCOME * Explore our wide range of music instruments and manage your shopping cart and account ! </h4>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Music Store</a>
+            <
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('shoppingcart_header.shoppingcart_lists', cart_id=cart_id) }}"> Shoppingcarts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.customer_dashboard') }}">Customer
-                    dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('customer.logout_customer') }}">Logout
-                    </a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('mainmenu.mainmenu') }}">Store Main Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart.add_to_cart')}}">Add to Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart.update_cart')}}">Udate Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart.delete_from_cart')}}">Remove from Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart.finalize_purchase_route')}}">Finalize Purchase</a><li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('customer.customer_dashboard') }}">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('shoppingcart_header.shoppingcart_header_list')}}">
+                    List Shoppingcarts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for
+                    ('customer.login_customer') }}">Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,7 +49,7 @@
      {% endwith %}
     </div>
  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
-    <footer class="text-left mt-4">
+    <footer class="text-center mt-4">
         <p>© Music Store 2024</p>
     </footer>
 </body>

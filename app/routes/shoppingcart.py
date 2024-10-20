@@ -1,10 +1,11 @@
 
 # Includes db access functions:
-# add_product_to_cart, update_product_quantity, delete_product_from_cart, finalize_purchase, get_cart_contents
+# add_product_to_cart, update_product_quantity, delete_product_from_cart, finalize_purchase, cart_contents
 
 from flask import Flask, request, jsonify, session, Blueprint, request, render_template, redirect, url_for, flash
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from decimal import Decimal
 from __init__ import db, logger
 
 shoppingcart_bp = Blueprint('shoppingcart', __name__)
@@ -42,12 +43,72 @@ def finalize_purchase_route():
     finalize_purchase(cart_id)
     return jsonify({'message': 'Purchase finalized'})
 
-@shoppingcart_bp.route('/cart-contents/<int:cart_id>', methods=['GET', 'POST'])
-def cart_contents(cart_id):
-    print(f"shoppingcart.cart_contents: Received cart_id: {cart_id}")
-    contents = get_cart_contents(cart_id)
-    print(f"Contents: {contents}")
-    return jsonify(contents)
+@shoppingcart_bp.route('/cart-contents', methods=['GET'])
+def cart_contents():
+
+    customer_id = session.get('customer_id')
+    if 'customer_id' in session:
+        logger.debug(f"Customer ID {customer_id} in current session.")
+    else:
+        flash('You need to log in first.', 'danger')
+        return redirect(url_for('customer.login_customer'))
+
+    cartcustomer_id = int(customer_id)
+    print(f"cartcustomer_id: {cartcustomer_id}")
+
+    conn = db.engine.raw_connection()
+    cur = conn.cursor()
+    cart_contents = []  # Initialize cart_contents to avoid UnboundLocalError
+
+    try:
+        cur.execute(
+            '''SELECT
+            scp.cart_id,
+            scp.product_id,
+            scp.quantity,
+            p.id,
+            p.productName,
+            p.productDetails,
+            p.productSalesPrice,
+            p.productDiscount,
+            (p.productSalesPrice * scp.quantity) AS total_price,
+            (p.productDiscount * scp.quantity) AS total_discount,
+            ((p.productSalesPrice * scp.quantity) * 0.25) AS total_vat -- Assuming 25% VAT
+            FROM
+                MStore_v1.ShoppingCart sc,
+                MStore_v1.ShoppingCartProduct scp
+            JOIN
+                MStore_v1.Product p ON scp.product_id = p.id
+            WHERE
+                scp.cart_id = 3
+                AND
+                sc.cartcustomer_id = cartcustomer_id
+                AND
+                sc.cartStatus = FALSE
+                ;''')
+
+        cart_contents = cur.fetchall()
+
+        # Convert Decimal to float
+        cart_contents = [
+            (
+                item[0], item[1], item[2], item[3], item[4], item[5],
+                float(item[6]), float(item[7]), float(item[8]), float(item[9]), float(item[10])
+            ) for item in cart_contents
+        ]
+
+        print(f"Query results: {cart_contents}")  # Debugging line
+
+    except Exception as e:
+        print(f"Error: {e}")
+
+    finally:
+        if cur:
+            cur.close()
+        if conn:
+            conn.close()
+
+    return render_template('shoppingcart_contents.html', cart_contents=cart_contents)
 
 
 # DB access functions
@@ -65,6 +126,9 @@ def add_product_to_cart(cart_id, product_id, quantity):
     cur.close()
     conn.close()
 
+    flash('Product added to cart successfully!', 'success')
+    logger.debug('Product added to cart successfully!')
+
 def update_product_quantity(cart_id, product_id, quantity):
 
     # Connect to the database
@@ -78,6 +142,9 @@ def update_product_quantity(cart_id, product_id, quantity):
     conn.commit()
     cur.close()
     conn.close()
+
+    flash('Product updated to cart successfully!', 'success')
+    logger.debug('Product updated to cart successfully!')
 
 def delete_product_from_cart(cart_id, product_id):
 
@@ -95,6 +162,10 @@ def delete_product_from_cart(cart_id, product_id):
     conn.commit()
     cur.close()
     conn.close()
+
+    flash('Product deleted from cart successfully!', 'success')
+    logger.debug('Product deleted from cart successfully!')
+
 
 def finalize_purchase(cart_id):
 
@@ -114,49 +185,5 @@ def finalize_purchase(cart_id):
     cur.close()
     conn.close()
 
-def get_cart_contents(cart_id):
-    print()
-    print(f"Received cart_id: {cart_id}")
-
-    # Connect to the database
-    conn = db.engine.raw_connection()
-    cur = conn.cursor(cursor_factory=RealDictCursor)
-    logger.debug('db connected')
-    print(f"Executing query with cart_id: {cart_id}")
-
-    cur.execute(
-        """
-        SELECT
-            scp.cart_id,
-            scp.product_id,
-            scp.quantity,
-            p.id,
-            p.productName,
-            p.productDetails,
-            p.productSalesPrice,
-            p.productDiscount,
-            (p.productSalesPrice * scp.quantity) AS total_price,
-            (p.productDiscount * scp.quantity) AS total_discount,
-            ((p.productSalesPrice * scp.quantity) * 0.25) AS total_vat -- Assuming 25% VAT
-        FROM
-            MStore_v1.ShoppingCartProduct scp
-        JOIN
-            MStore_v1.Product p ON scp.product_id = p.id
-        WHERE
-            scp.cart_id = %s
-        """, (cart_id,)
-    )
-
-    contents = cur.fetchall()
-    print(f"shoppingcart.get_cart_contents: Query results: {contents}")
-
-    cur.close()
-    conn.close()
-
-    if not contents:
-        flash('No shopping carts found for this customer!', 'danger')
-        logger.error('No shopping carts found for this customer.')
-        return render_template("customer_shopping_carts.html")
-
-    #return contents
-    return jsonify(contents)
+    flash('Cart purchase finalized successfully!', 'success')
+    logger.debug('Cart purchase finalized successfully!')
